@@ -1,0 +1,53 @@
+{
+  "name": "@sfxcode/nuxt-primevue",
+  "version": "0.5.0",
+  "license": "MIT",
+  "type": "module",
+  "author": {
+    "name": "Tom Lamers",
+    "email": "tom@sfxcode.com"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepack": "nuxt-module-build",
+    "dev": "nuxi dev playground",
+    "dev:build": "nuxi build playground",
+    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.0.0-rc.6",
+    "chart.js": ">=3.8.0",
+    "primeicons": ">=5.0.0",
+    "primevue": ">=3.15.0",
+    "@sfxcode/formkit-primevue": ">=0.5.5"
+  },
+  "devDependencies": {
+    "@nuxt/module-builder": "latest",
+    "@nuxtjs/eslint-config-typescript": "latest",
+    "eslint": "latest",
+    "nuxt": "^3.0.0-rc.6",
+    "@vueuse/nuxt": "^8.9.4",
+    "@unocss/nuxt": "^0.44.5",
+    "@formkit/nuxt": "1.0.0-beta.9",
+    "sass": ">=1.53.0"
+  },
+  "keywords": [
+    "nuxt",
+    "nuxt-module",
+    "vue3",
+    "nuxt3",
+    "nuxt-primevue",
+    "formkit",
+    "formkit-primevue"
+  ]
+}
