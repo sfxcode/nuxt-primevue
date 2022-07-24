@@ -20,7 +20,8 @@ export default defineNuxtModule<ModuleOptions>({
       nuxt.options.build.transpile.push(runtimeDir)
       addPlugin(resolve(runtimeDir, 'plugin'))
 
-      addComponent({ name: "PrimeDemoToast", filePath: resolve(runtimeDir, 'components/PrimeDemoToast.vue') })
+      addComponent({ name: "PrimeDemoToast", filePath: resolve(runtimeDir, 'components/demo/PrimeDemoToast.vue') })
+      addComponent({ name: "PrimeDemoForm", filePath: resolve(runtimeDir, 'components/demo/PrimeDemoForm.vue') })
 
     }
   }
