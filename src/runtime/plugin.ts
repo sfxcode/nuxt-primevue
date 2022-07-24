@@ -97,6 +97,10 @@ export default defineNuxtPlugin((nuxtApp) => {
   app.directive('tooltip', Tooltip)
   app.directive('styleclass', StyleClass)
 
+  // services
+  app.use(ConfirmationService)
+  app.use(ToastService)
+
   // components
   app.component('Accordion', Accordion)
   app.component('AccordionTab', AccordionTab)
@@ -177,7 +181,5 @@ export default defineNuxtPlugin((nuxtApp) => {
 
   app.use(PrimeVue, { ripple: true })
 
-  // services
-  app.use(ConfirmationService)
-  app.use(ToastService)
+
 })
