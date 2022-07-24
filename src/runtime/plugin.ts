@@ -90,8 +90,10 @@ import { defineNuxtPlugin } from '#app'
 
 export default defineNuxtPlugin((nuxtApp) => {
   const app = nuxtApp.vueApp
-  // directives
 
+  app.use(PrimeVue, { ripple: true })
+
+  // directives
   app.directive('badge', BadgeDirective)
   app.directive('ripple', Ripple)
   app.directive('tooltip', Tooltip)
@@ -178,8 +180,5 @@ export default defineNuxtPlugin((nuxtApp) => {
   app.component('Tree', Tree)
   app.component('TreeTable', TreeTable)
   app.component('TriStateCheckbox', TriStateCheckbox)
-
-  app.use(PrimeVue, { ripple: true })
-
 
 })
