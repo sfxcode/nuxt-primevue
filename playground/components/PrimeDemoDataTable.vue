@@ -26,7 +26,7 @@ onMounted(async () => {
 
 <template>
   <div class="card">
-    <h5>DataTable Example</h5>
+    <h2>PrimeVue Demo DataTable</h2>
     <div v-if="error">
       <h5 class="text-red-500">
         Error

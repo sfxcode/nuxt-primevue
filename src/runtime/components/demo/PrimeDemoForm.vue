@@ -19,6 +19,10 @@ const schema = reactive(
       children: ['Inputs from PrimeVue'],
     },
     {
+      $el: 'h3',
+      children: ['Validation by FormKit'],
+    },
+    {
       $formkit: 'primeInputText',
       name: 'email',
       label: 'Email',
@@ -86,6 +90,17 @@ const schema = reactive(
       min: 5,
       step: 5,
       value: 10,
+    },
+    {
+      $formkit: 'primeChips',
+      name: 'chips',
+      label: 'Use Chips',
+    },
+    {
+      $formkit: 'primeKnob',
+      name: 'knob',
+      label: 'Use Knob',
+      value: 50,
     },
   ],
 )
