@@ -8,7 +8,6 @@ specifiers:
   '@sfxcode/formkit-primevue': '>=0.6.0'
   '@unocss/nuxt': ^0.45.6
   '@vueuse/nuxt': ^9.1.0
-  chart.js: '>=3.8.2'
   eslint: latest
   nuxt: ^3.0.0-rc.8
   primeicons: '>=5.0.0'
@@ -18,7 +17,6 @@ specifiers:
 dependencies:
   '@nuxt/kit': 3.0.0-rc.8
   '@sfxcode/formkit-primevue': 0.6.0
-  chart.js: 3.8.2
   primeicons: 5.0.0
   primevue: 3.15.0_primeicons@5.0.0
 
@@ -421,7 +419,7 @@ packages:
     resolution: {integrity: sha512-idgMbrKAaYgi250VZHGmsGR66EQQXodRDzvYJhJjzGhx6+Te8Cl9inpNM8i0Ek0PBZVKsSvo+7z9s45hSha0HA==}
     dependencies:
       '@formkit/vue': 1.0.0-beta.10
-      '@nuxt/kit': /@nuxt/kit-edge/3.0.0-rc.8-27671901.0a513a5
+      '@nuxt/kit': /@nuxt/kit-edge/3.0.0-rc.8-27672245.2ec2d9b
     transitivePeerDependencies:
       - esbuild
       - rollup
@@ -617,11 +615,11 @@ packages:
     resolution: {integrity: sha512-YBI/6o2EBz02tdEJRBK8xkt3zvOFOWlLBf7WKYGBsSYSRtjjgrqPe2skp6VLLmKx5WbHHDNcW+6oACaurxGzeA==}
     dev: true
 
-  /@nuxt/kit-edge/3.0.0-rc.8-27671901.0a513a5:
-    resolution: {integrity: sha512-9+KJtvne3eMFFw0T9IgfoVHvg3GZjjAJdNtfggutYWl7ChFXHrs20Bu7bCeFEd1qXUchuOWV2sZGmQByi4Ms9Q==}
+  /@nuxt/kit-edge/3.0.0-rc.8-27672245.2ec2d9b:
+    resolution: {integrity: sha512-UV+CmGYlALplKnY0YIu3xBL41NJKVV3nvCxGaLY7TPmaNfkwhZEQ71qw/hG7aAaz0XNtDwupM8w0SJ94sRNT3A==}
     engines: {node: ^14.16.0 || ^16.11.0 || ^17.0.0 || ^18.0.0}
     dependencies:
-      '@nuxt/schema': /@nuxt/schema-edge/3.0.0-rc.8-27671901.0a513a5
+      '@nuxt/schema': /@nuxt/schema-edge/3.0.0-rc.8-27672245.2ec2d9b
       c12: 0.2.9
       consola: 2.15.3
       defu: 6.0.0
@@ -749,8 +747,8 @@ packages:
       - supports-color
     dev: true
 
-  /@nuxt/schema-edge/3.0.0-rc.8-27671901.0a513a5:
-    resolution: {integrity: sha512-1F0Ae+t4hWIIRVfXlevwr4sZsNbnkppFo0ucQkG5WMtwPAs+/LaweKsTZ3VW6YK/zwhWAmzey12IM+x5m0hVZA==}
+  /@nuxt/schema-edge/3.0.0-rc.8-27672245.2ec2d9b:
+    resolution: {integrity: sha512-C++FmY/p9NI8ffKSpUpckpRMipRUy36kCHkM4h3lRKtnbuq38OORxzzePAvHNjRAxWmD9Tc0zJDHmNvbbGqf3Q==}
     engines: {node: ^14.16.0 || ^16.11.0 || ^17.0.0 || ^18.0.0}
     dependencies:
       c12: 0.2.9
@@ -1989,10 +1987,6 @@ packages:
   /chardet/0.7.0:
     resolution: {integrity: sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==}
     dev: true
-
-  /chart.js/3.8.2:
-    resolution: {integrity: sha512-7rqSlHWMUKFyBDOJvmFGW2lxULtcwaPLegDjX/Nu5j6QybY+GCiQkEY+6cqHw62S5tcwXMD8Y+H5OBGoR7d+ZQ==}
-    dev: false
 
   /chokidar/3.5.3:
     resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==}

@@ -9,7 +9,6 @@ import Breadcrumb from 'primevue/breadcrumb'
 import Calendar from 'primevue/calendar'
 import Card from 'primevue/card'
 import Carousel from 'primevue/carousel'
-import Chart from 'primevue/chart'
 import Checkbox from 'primevue/checkbox'
 import Chip from 'primevue/chip'
 import Chips from 'primevue/chips'
@@ -115,7 +114,6 @@ export default defineNuxtPlugin((nuxtApp) => {
   app.component('Calendar', Calendar)
   app.component('Card', Card)
   app.component('Carousel', Carousel)
-  app.component('Chart', Chart)
   app.component('Checkbox', Checkbox)
   app.component('Chip', Chip)
   app.component('Chips', Chips)
