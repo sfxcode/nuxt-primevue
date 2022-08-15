@@ -1,6 +1,5 @@
 <script setup lang="ts">
 
-import PrimeDemoDataTable from "~/components/PrimeDemoDataTable.vue";
 </script>
 
 <template>
@@ -9,7 +8,6 @@ import PrimeDemoDataTable from "~/components/PrimeDemoDataTable.vue";
       <div class="basis-1/2">
         <div><PrimeDemoToast/></div>
         <div><PrimeDemoDataTable/></div>
-
       </div>
       <div class="basis-1/4"><PrimeDemoForm/></div>
     </div>

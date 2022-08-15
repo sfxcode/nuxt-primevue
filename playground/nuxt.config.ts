@@ -2,6 +2,7 @@ import { defineNuxtConfig } from 'nuxt'
 import MyModule from '..'
 
 export default defineNuxtConfig({
+  ssr: true,
   modules: [
     '@vueuse/nuxt',
     '@unocss/nuxt',
