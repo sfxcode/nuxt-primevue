@@ -1,11 +1,11 @@
-import AutoComplete from 'primevue/autocomplete'
 import Accordion from 'primevue/accordion'
 import AccordionTab from 'primevue/accordiontab'
+import AutoComplete from 'primevue/autocomplete'
 import Avatar from 'primevue/avatar'
 import AvatarGroup from 'primevue/avatargroup'
 import Badge from 'primevue/badge'
-import Button from 'primevue/button'
 import Breadcrumb from 'primevue/breadcrumb'
+import Button from 'primevue/button'
 import Calendar from 'primevue/calendar'
 import Card from 'primevue/card'
 import Carousel from 'primevue/carousel'
@@ -25,6 +25,7 @@ import Divider from 'primevue/divider'
 import Dropdown from 'primevue/dropdown'
 import Fieldset from 'primevue/fieldset'
 import FileUpload from 'primevue/fileupload'
+import Galleria from 'primevue/galleria'
 import InlineMessage from 'primevue/inlinemessage'
 import Inplace from 'primevue/inplace'
 import InputMask from 'primevue/inputmask'
@@ -32,7 +33,6 @@ import InputNumber from 'primevue/inputnumber'
 import InputSwitch from 'primevue/inputswitch'
 import InputText from 'primevue/inputtext'
 import Knob from 'primevue/knob'
-import Galleria from 'primevue/galleria'
 import Listbox from 'primevue/listbox'
 import MegaMenu from 'primevue/megamenu'
 import Menu from 'primevue/menu'
@@ -48,28 +48,28 @@ import PanelMenu from 'primevue/panelmenu'
 import Password from 'primevue/password'
 import PickList from 'primevue/picklist'
 import ProgressBar from 'primevue/progressbar'
-import Rating from 'primevue/rating'
 import RadioButton from 'primevue/radiobutton'
-import SelectButton from 'primevue/selectbutton'
+import Rating from 'primevue/rating'
 import ScrollPanel from 'primevue/scrollpanel'
 import ScrollTop from 'primevue/scrolltop'
-import Slider from 'primevue/slider'
+import SelectButton from 'primevue/selectbutton'
 import Sidebar from 'primevue/sidebar'
 import Skeleton from 'primevue/skeleton'
+import Slider from 'primevue/slider'
 import SplitButton from 'primevue/splitbutton'
 import Splitter from 'primevue/splitter'
 import SplitterPanel from 'primevue/splitterpanel'
 import Steps from 'primevue/steps'
 import TabMenu from 'primevue/tabmenu'
+import TabPanel from 'primevue/tabpanel'
+import TabView from 'primevue/tabview'
 import Tag from 'primevue/tag'
-import TieredMenu from 'primevue/tieredmenu'
 import Textarea from 'primevue/textarea'
+import TieredMenu from 'primevue/tieredmenu'
 import Timeline from 'primevue/timeline'
 import Toast from 'primevue/toast'
-import Toolbar from 'primevue/toolbar'
-import TabView from 'primevue/tabview'
-import TabPanel from 'primevue/tabpanel'
 import ToggleButton from 'primevue/togglebutton'
+import Toolbar from 'primevue/toolbar'
 import Tree from 'primevue/tree'
 import TreeTable from 'primevue/treetable'
 import TriStateCheckbox from 'primevue/tristatecheckbox'
@@ -83,14 +83,17 @@ import StyleClass from 'primevue/styleclass'
 import Tooltip from 'primevue/tooltip'
 
 // services
+import { defineNuxtPlugin } from '#app'
 import ConfirmationService from 'primevue/confirmationservice'
 import ToastService from 'primevue/toastservice'
-import { defineNuxtPlugin } from '#app'
+import type { PrimeVueConfiguration } from '~~/types'
 
 export default defineNuxtPlugin((nuxtApp) => {
   const app = nuxtApp.vueApp
 
-  app.use(PrimeVue, { ripple: true })
+  const config: PrimeVueConfiguration = JSON.parse('<%= options.value %>')
+
+  app.use(PrimeVue, config)
 
   // directives
   app.directive('badge', BadgeDirective)
@@ -178,5 +181,4 @@ export default defineNuxtPlugin((nuxtApp) => {
   app.component('Tree', Tree)
   app.component('TreeTable', TreeTable)
   app.component('TriStateCheckbox', TriStateCheckbox)
-
 })
