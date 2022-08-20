@@ -1,6 +1,6 @@
 {
   "name": "@sfxcode/nuxt-primevue",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "license": "MIT",
   "type": "module",
   "author": {
@@ -39,7 +39,7 @@
     "@vueuse/nuxt": "^9.1.0",
     "eslint": "^8.22.0",
     "nuxt": "^3.0.0-rc.8",
-    "sass": "^1.54.4"
+    "sass": "^1.54.5"
 
   },
   "keywords": [
