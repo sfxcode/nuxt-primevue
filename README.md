@@ -4,6 +4,10 @@
 * Add PrimeVue Services (usePrimeDataTable)
 * [Formkit](https://formkit.com/) Support witf [formkit-primevue](https://github.com/sfxcode/formkit-primevue)
 
+## Version
+
+[![npm version](https://badge.fury.io/js/@sfxcode%2Fnuxt-primevue.svg)](https://badge.fury.io/js/@sfxcode%2Fnuxt-primevue)
+
 ## Nuxt 3 Demo
 
 [Github: nuxt3-primevue-starter](https://github.com/sfxcode/nuxt3-primevue-starter)
