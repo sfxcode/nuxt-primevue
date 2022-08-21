@@ -83,15 +83,17 @@ import StyleClass from 'primevue/styleclass'
 import Tooltip from 'primevue/tooltip'
 
 // services
-import { defineNuxtPlugin } from '#app'
+import {defineNuxtPlugin, useFetch} from '#app'
 import ConfirmationService from 'primevue/confirmationservice'
 import ToastService from 'primevue/toastservice'
-import type { PrimeVueConfiguration } from '~~/types'
+
+import {PrimeVueConfiguration} from "../types";
+// workaround for primevue config options
+import primevue from '/primevue.json'
 
 export default defineNuxtPlugin((nuxtApp) => {
   const app = nuxtApp.vueApp
-
-  const config: PrimeVueConfiguration = JSON.parse('<%= options.value %>')
+  const config: PrimeVueConfiguration = primevue
 
   app.use(PrimeVue, config)
 
