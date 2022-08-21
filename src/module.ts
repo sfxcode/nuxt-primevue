@@ -2,10 +2,12 @@ import { resolve } from 'path'
 import { fileURLToPath } from 'url'
 import { defineNuxtModule, addPlugin, addComponent } from '@nuxt/kit'
 import type { PrimeVueConfiguration } from './types'
+import defu from 'defu'
 
 export { PrimeVueConfiguration }
 export interface ModuleOptions {
   addPlugin: boolean
+  config: PrimeVueConfiguration
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -15,13 +17,26 @@ export default defineNuxtModule<ModuleOptions>({
   },
   defaults: {
     addPlugin: true,
+    config: {
+      ripple: true
+    }
   },
   setup (moduleOptions, nuxt) {
     if (moduleOptions.addPlugin) {
+      nuxt.options.runtimeConfig.public.primevue = defu(nuxt.options.runtimeConfig.public.primevue,
+        {
+          config: moduleOptions.config,
+        },
+      )
+
       const runtimeDir = fileURLToPath(new URL('./runtime', import.meta.url))
       nuxt.options.build.transpile.push(runtimeDir)
 
-      addPlugin(resolve(runtimeDir, 'plugin'))
+      addPlugin({
+        src: resolve(runtimeDir, 'plugin')
+      })
+
+
 
       nuxt.hook('autoImports:dirs', (dirs) => {
         dirs.push(resolve(runtimeDir, 'composables'))
@@ -29,6 +44,8 @@ export default defineNuxtModule<ModuleOptions>({
 
       addComponent({ name: 'PrimeDemoToast', filePath: resolve(runtimeDir, 'components/demo/PrimeDemoToast.vue') })
       addComponent({ name: 'PrimeDemoForm', filePath: resolve(runtimeDir, 'components/demo/PrimeDemoForm.vue') })
+
+
     }
   }
 })
