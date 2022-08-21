@@ -27,17 +27,6 @@ Add Module **nuxt-primevue** to **nuxt.config.ts**
   ],
 ```
 
-Create **primevue.json**
-
-```json
-{
-  "ripple": true
-}
-
-```
-
-
-
 Create **formkit.config.ts**
 
 ```ts

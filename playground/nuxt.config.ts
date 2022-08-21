@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   primevue: {
     addPlugin: true,
     config: {
-      ripple: false
+      ripple: true
     }
   },
   unocss: {

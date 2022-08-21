@@ -88,14 +88,19 @@ import ConfirmationService from 'primevue/confirmationservice'
 import ToastService from 'primevue/toastservice'
 
 import {PrimeVueConfiguration} from "../types";
-// workaround for primevue config options
-import primevue from '/primevue.json'
 
 export default defineNuxtPlugin((nuxtApp) => {
   const app = nuxtApp.vueApp
-  const config: PrimeVueConfiguration = primevue
+  let primevueConfig: PrimeVueConfiguration = {ripple: true}
 
-  app.use(PrimeVue, config)
+  const runtimeConfig = useRuntimeConfig()
+  const config: PrimeVueConfiguration = runtimeConfig.primevue?.config
+
+  if (config) {
+    primevueConfig = config
+  }
+
+  app.use(PrimeVue, primevueConfig)
 
   // directives
   app.directive('badge', BadgeDirective)
