@@ -83,21 +83,22 @@ import StyleClass from 'primevue/styleclass'
 import Tooltip from 'primevue/tooltip'
 
 // services
-import {defineNuxtPlugin, useFetch} from '#app'
+import {defineNuxtPlugin} from '#app'
 import ConfirmationService from 'primevue/confirmationservice'
 import ToastService from 'primevue/toastservice'
 
 import {PrimeVueConfiguration} from "../types";
+import {useRuntimeConfig} from "nuxt/app";
 
 export default defineNuxtPlugin((nuxtApp) => {
   const app = nuxtApp.vueApp
   let primevueConfig: PrimeVueConfiguration = {ripple: true}
 
   const runtimeConfig = useRuntimeConfig()
-  const config: PrimeVueConfiguration = runtimeConfig.primevue?.config
+  const moduleConfig: PrimeVueConfiguration = runtimeConfig?.primevue?.config
 
-  if (config) {
-    primevueConfig = config
+  if (moduleConfig) {
+    primevueConfig = moduleConfig
   }
 
   app.use(PrimeVue, primevueConfig)
