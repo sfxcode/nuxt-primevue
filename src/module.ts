@@ -1,6 +1,6 @@
 import { resolve } from 'path'
 import { fileURLToPath } from 'url'
-import { defineNuxtModule, addPlugin, addComponent } from '@nuxt/kit'
+import {defineNuxtModule, addPlugin, addComponent, addImportsDir} from '@nuxt/kit'
 import type { PrimeVueConfiguration } from './types'
 import defu from 'defu'
 
@@ -37,10 +37,7 @@ export default defineNuxtModule<ModuleOptions>({
       })
 
 
-
-      nuxt.hook('autoImports:dirs', (dirs) => {
-        dirs.push(resolve(runtimeDir, 'composables'))
-      })
+      addImportsDir(resolve(runtimeDir, 'composables'))
 
       addComponent({ name: 'PrimeDemoToast', filePath: resolve(runtimeDir, 'components/demo/PrimeDemoToast.vue') })
       addComponent({ name: 'PrimeDemoForm', filePath: resolve(runtimeDir, 'components/demo/PrimeDemoForm.vue') })
