@@ -1,7 +1,6 @@
 <script setup lang='ts'>
 import { FilterMatchMode } from 'primevue/api'
 import {usePrimeDataTable} from '#imports';
-
 const { tableData, filters, dataTableRef, exportCSV } = usePrimeDataTable()
 
 filters.value = {
@@ -11,17 +10,15 @@ filters.value = {
   inventoryStatus: { value: null, matchMode: FilterMatchMode.STARTS_WITH },
 }
 
-const { data, pending, error, refresh } = await useFetch(
-  'products.json',
-)
+const { pending, data: products, error } = useLazyFetch('/api/products')
 
-watch(data, (newValue) => {
-  tableData.value = newValue.data
+
+watch(products, (newProducts) => {
+  console.log("update")
+  console.log(newProducts.data)
+  tableData.value = newProducts.data
 })
 
-onMounted(async () => {
-  refresh()
-})
 </script>
 
 <template>
