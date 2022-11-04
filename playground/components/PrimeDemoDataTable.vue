@@ -14,8 +14,6 @@ const { pending, data: products, error } = useLazyFetch('/api/products')
 
 
 watch(products, (newProducts) => {
-  console.log("update")
-  console.log(newProducts.data)
   tableData.value = newProducts.data
 })
 
