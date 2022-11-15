@@ -1,6 +1,6 @@
 {
   "name": "@sfxcode/nuxt-primevue",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "license": "MIT",
   "type": "module",
   "author": {
@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.0.0-rc.13",
-    "@sfxcode/formkit-primevue": ">=0.8.4",
+    "@sfxcode/formkit-primevue": ">=0.9.0",
     "primeicons": ">=6.0.1",
     "primevue": ">=3.18.1"
   },
@@ -38,10 +38,10 @@
     "@formkit/nuxt": "next",
     "@nuxt/module-builder": "latest",
     "@nuxtjs/eslint-config-typescript": "latest",
-    "@unocss/nuxt": "^0.46.4",
+    "@unocss/nuxt": "^0.46.5",
     "@vueuse/nuxt": "^9.5.0",
     "eslint": "^8.27.0",
-    "defu": "^6.0.0",
+    "defu": "^6.1.1",
     "nuxt": "^3.0.0-rc.13",
     "sass": "^1.56.1"
 
