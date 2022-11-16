@@ -1,4 +1,5 @@
 import MyModule from '..'
+import {defaultPrimeVueComponents} from "../src/runtime/primevueComponents";
 
 export default defineNuxtConfig({
   ssr: false,
@@ -12,6 +13,10 @@ export default defineNuxtConfig({
     addPlugin: true,
     config: {
       ripple: true
+    },
+    components: {
+      include: [...defaultPrimeVueComponents(true, true)],
+      force: ['DataTable', 'Column', 'Button',{name:'Message', global:true}],
     }
   },
   unocss: {
