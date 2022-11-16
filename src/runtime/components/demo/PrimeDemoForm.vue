@@ -31,7 +31,7 @@ const schema = reactive(
 
     },
     {
-      $formkit: 'primeInputTextArea',
+      $formkit: 'primeTextarea',
       name: 'myText',
       label: 'Text',
       validation: '',
@@ -115,7 +115,7 @@ const submitHandler = async () => {
 
 <template>
   <div>
-    <div class="myFormkit">
+    <div class="myFormkit" v-focustrap>
       <FormKit
         id="form"
         v-model="data"
