@@ -10,6 +10,7 @@ import {
   PrimeVueComponent
 } from "./runtime/primevueComponents";
 import consola from 'consola'
+import { name, version } from '../package.json'
 
 export {PrimeVueConfiguration}
 
@@ -37,8 +38,12 @@ async function registerComponent(component: PrimeVueComponent, registeredNames:s
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'nuxt-primevue',
-    configKey: 'primevue'
+    name,
+    version,
+    configKey: 'primevue',
+    compatibility: {
+      nuxt: '^3.0.0',
+    },
   },
   defaults: {
     addPlugin: true,
