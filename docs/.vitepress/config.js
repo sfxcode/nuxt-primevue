@@ -6,6 +6,7 @@ import { version } from '../../package.json'
 export default defineConfig({
   title: 'PrimeVue Nuxt 3',
   description: 'PrimeVue Nuxt 3',
+  base: '/nuxt-primevue/',
   themeConfig: {
     footer: {
       message: 'VitePress Blog Starter',
