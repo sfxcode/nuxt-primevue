@@ -1,6 +1,6 @@
 {
   "name": "@sfxcode/nuxt-primevue",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "license": "MIT",
   "type": "module",
   "author": {
@@ -23,16 +23,20 @@
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
-    "dev:start": "node playground/.output/server/index.mjs"
+    "dev:start": "node playground/.output/server/index.mjs",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
+    "changelog": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 0 -n changelog/config.ts"
   },
   "build": {
     "failOnWarn":false
   },
   "dependencies": {
     "@nuxt/kit": "^3.0.0",
-    "@sfxcode/formkit-primevue": ">=0.9.3",
+    "@sfxcode/formkit-primevue": ">=0.9.4",
     "primeicons": ">=6.0.1",
-    "primevue": ">=3.19.0"
+    "primevue": ">=3.20.0"
   },
   "devDependencies": {
     "@formkit/nuxt": "1.0.0-beta.12",
@@ -40,11 +44,16 @@
     "@nuxtjs/eslint-config-typescript": "12.0.0",
     "@unocss/nuxt": "^0.46.5",
     "@vueuse/nuxt": "^9.5.0",
-    "eslint": "^8.27.0",
+    "anu-vue": "^0.10.0",
+    "conventional-changelog-cli": "^2.2.2",
     "defu": "^6.1.1",
+    "eslint": "^8.28.0",
+    "flexsearch": "^0.7.31",
     "nuxt": "^3.0.0",
-    "sass": "^1.56.1"
-
+    "sass": "^1.56.1",
+    "unocss": "^0.46.5",
+    "vitepress": "1.0.0-alpha.29",
+    "vitepress-plugin-search": "1.0.4-alpha.15"
   },
   "keywords": [
     "nuxt",
