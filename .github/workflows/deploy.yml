@@ -24,6 +24,8 @@ jobs:
 
       - run: pnpm install
 
+      - run: pnpm dev:prepare
+
       - run: pnpm dev:build
 
       - run: pnpm docs:build
