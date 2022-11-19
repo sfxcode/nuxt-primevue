@@ -24,6 +24,8 @@ jobs:
 
       - run: pnpm install
 
+      - run: pnpm dev:build
+
       - run: pnpm docs:build
 
       - name: Deploy
