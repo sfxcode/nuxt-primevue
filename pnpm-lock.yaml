@@ -13,6 +13,7 @@ specifiers:
   defu: ^6.1.1
   eslint: ^8.28.0
   flexsearch: ^0.7.31
+  markdown-it: ^13.0.1
   nuxt: ^3.0.0
   primeicons: '>=6.0.1'
   primevue: '>=3.20.0'
@@ -38,6 +39,7 @@ devDependencies:
   defu: 6.1.1
   eslint: 8.28.0
   flexsearch: 0.7.31
+  markdown-it: 13.0.1
   nuxt: 3.0.0_eslint@8.28.0+sass@1.56.1
   sass: 1.56.1
   unocss: 0.46.5
