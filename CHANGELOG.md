@@ -6,6 +6,11 @@
 * **Components:** Add Components by name in module.ts ([4eb864f](https://github.com/sfxcode/nuxt-primevue/commit/4eb864f12e7155a18b2804c0f1681267835ee8c1))
 
 
+### Documentation
+
+* **Vitepress:** Add Documentation ([8a39dc1](https://github.com/sfxcode/nuxt-primevue/commit/8a39dc139bf1076190bccae510395f19d2f89d69))
+
+
 ### Features
 
 * **Dircectives:** Add FocusTrap ([f28529d](https://github.com/sfxcode/nuxt-primevue/commit/f28529db3ebc2e6936d3f9b25ba5552bcb4f728e))
@@ -36,6 +41,11 @@
 * **charts:** remove chart and chart.js dependency ([8ec2a84](https://github.com/sfxcode/nuxt-primevue/commit/8ec2a84e66f82070762a305a979c8edf4bf0f950))
 * **tableData:** move to server api ([f729335](https://github.com/sfxcode/nuxt-primevue/commit/f729335677720875b577a480468c06a5f6767d74))
 * **tableData:** move to server api ([68f1578](https://github.com/sfxcode/nuxt-primevue/commit/68f1578ea442551dfc383aca3b060a98c27cb3f4))
+
+
+### Documentation
+
+* **Readme:** Add Badge ([177799b](https://github.com/sfxcode/nuxt-primevue/commit/177799be0e4b2e6c539a23fa3c73918906b85aa8))
 
 
 ### Features

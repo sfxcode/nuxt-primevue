@@ -18,6 +18,8 @@ const writerOpts = {
       commit.type = 'Code Refactoring'
     else if (commit.type === 'chore')
       commit.type = 'Maintenance'
+    else if (commit.type === 'docs')
+      commit.type = 'Documentation'
     else
       return
 
