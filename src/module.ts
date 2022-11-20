@@ -14,6 +14,7 @@ import { name, version } from '../package.json'
 
 export {PrimeVueConfiguration}
 
+// #region options
 export interface ModuleOptions {
   addPlugin: boolean
   config: PrimeVueConfiguration
@@ -24,6 +25,7 @@ export interface ModuleOptions {
   }
   useFormkit: boolean
 }
+// #endregion options
 
 async function registerComponent(component: PrimeVueComponent, registeredNames:string[]) {
   if (! registeredNames.includes(component.name)) {

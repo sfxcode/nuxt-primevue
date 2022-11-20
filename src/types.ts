@@ -1,10 +1,10 @@
-interface PrimeVueLocaleAriaOptions {
+export interface PrimeVueLocaleAriaOptions {
     trueLabel?: string;
     falseLabel?: string;
     nullLabel?: string;
 }
 
-interface PrimeVueLocaleOptions {
+export interface PrimeVueLocaleOptions {
     startsWith?: string;
     contains?: string;
     notContains?: string;

@@ -55,54 +55,28 @@ Base scss files for formkit can be imported from formkit-primevue.
   }
 ```
 
-## Available PrimeVue Elements
+### Step 6 (only for usage of Formkit with PrimeVue)
 
-Following **directives** are automatically enabled by this module:
+Add formkit.config.ts to your root dir and register primeInputs.
 
-* badge
-* focustrap
-* ripple
-* styleclass
-* tooltip
+<<< @/../playground/formkit.config.ts
 
+## Test Installation
 
-Following **services** are automatically enabled by this module:
+This module contains some demo components to make sure everything work as expected.
 
-* ConfirmationService
-* ToastService
+### PrimeDemoToast
 
-**Components** are available based on your module configuration.
-
-## Usage in Application
-
-::: info
-PrimeVue Toast and Button should be autoimported (like in defaults).
-:::
+Makes sure PrimeVue Services and Components are available.
 
 ```vue
-<script setup lang="ts">
-import { useToast } from 'primevue/usetoast'
+<PrimeDemoToast/>
+```
 
-const toast = useToast()
+### PrimeDemoForm
 
-const showSuccess = () => {
-  toast.add({ severity: 'success', summary: 'Success Message', detail: 'Message Content', life: 3000 })
-}
+Makes sure Formkit by PrimeVue Input components and validation are available.
 
-</script>
-
-<template>
-  <div class="card">
-    <h2>PrimeVue Toast Demo</h2>
-
-    <div>
-      <Toast />
-      <div>
-        <Button label="Success" class="p-button-success" @click="showSuccess" />
-      </div>
-    </div>
-  </div>
-
-</template>
-
+```vue
+<PrimeDemoForm/>
 ```
