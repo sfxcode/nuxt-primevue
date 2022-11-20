@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as n,a as e}from"./app.bff7bdfa.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"guide/getting-started.md"}'),p={name:"guide/getting-started.md"},o=e("",27),l=[o];function t(r,c,i,d,D,y){return a(),n("div",null,l)}const C=s(p,[["render",t]]);export{u as __pageData,C as default};

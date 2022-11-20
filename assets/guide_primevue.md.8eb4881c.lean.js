@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as n,a as l}from"./app.bff7bdfa.js";const u=JSON.parse('{"title":"About PrimeVue Integration","description":"","frontmatter":{},"headers":[],"relativePath":"guide/primevue.md"}'),o={name:"guide/primevue.md"},p=l("",10),e=[p];function t(c,r,F,D,y,i){return a(),n("div",null,e)}const A=s(o,[["render",t]]);export{u as __pageData,A as default};
