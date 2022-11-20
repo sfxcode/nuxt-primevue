@@ -87,7 +87,14 @@ function sidebarGuide() {
       text: 'PrimeVue',
       collapsible: true,
       items: [
-        { text: 'About PrimeVue', link: '/guide/primevue' },
+        { text: 'PrimeVue Integration', link: '/guide/primevue' },
+      ],
+    },
+    {
+      text: 'Formkit',
+      collapsible: true,
+      items: [
+        { text: 'Formkit Integration', link: '/guide/formkit' },
       ],
     },
   ]

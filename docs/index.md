@@ -7,7 +7,7 @@ hero:
   tagline: Use PrimeVue and Validation in Nuxt 3
   actions:
     - theme: brand
-      text: Getting Started
+      text: Get Started
       link: /guide/getting-started
     - theme: alt
       text: Guide
