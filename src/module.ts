@@ -16,7 +16,6 @@ export {PrimeVueConfiguration}
 
 // #region options
 export interface ModuleOptions {
-  addPlugin: boolean
   config: PrimeVueConfiguration
   components?: {
     include?: Array<PrimeVueComponent | string>
@@ -48,7 +47,6 @@ export default defineNuxtModule<ModuleOptions>({
     },
   },
   defaults: {
-    addPlugin: true,
     config: {
       ripple: true
     },

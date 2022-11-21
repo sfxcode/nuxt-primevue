@@ -39,7 +39,7 @@
     "primevue": ">=3.20.0"
   },
   "devDependencies": {
-    "@iconify-json/mdi": "^1.1.34",
+    "@iconify-json/mdi": "^1.1.35",
     "@formkit/nuxt": "1.0.0-beta.12",
     "@nuxt/module-builder": "latest",
     "@nuxtjs/eslint-config-typescript": "12.0.0",

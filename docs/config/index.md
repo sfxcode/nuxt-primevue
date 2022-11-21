@@ -4,6 +4,16 @@ Available Configuration options are:
 
 <<< @/../src/module.ts#options
 
+## Default Configuration
+
+If no configuration provided, this module work totally fine.
+
+Nearly all PrimeVue components imported, formkit components imported global (except Editor because of some SSR problems).
+
+Default PrimeVueConfiguration is used (ripple:true).
+
+If fintuning needed, see information below.
+
 ## Primevue Configuration
 
 PrimeVueConfiguration is read from module config and injected in the PrimeVue startup of this module.
