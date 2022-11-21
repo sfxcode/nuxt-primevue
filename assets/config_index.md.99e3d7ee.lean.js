@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as a,a as o}from"./app.bff7bdfa.js";const u=JSON.parse('{"title":"Module Configuration","description":"","frontmatter":{},"headers":[],"relativePath":"config/index.md"}'),p={name:"config/index.md"},l=o("",32),e=[l];function t(r,c,i,F,y,D){return n(),a("div",null,e)}const d=s(p,[["render",t]]);export{u as __pageData,d as default};
