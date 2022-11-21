@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@formkit/nuxt': 1.0.0-beta.12
-  '@iconify-json/mdi': ^1.1.34
+  '@iconify-json/mdi': ^1.1.35
   '@nuxt/kit': ^3.0.0
   '@nuxt/module-builder': latest
   '@nuxtjs/eslint-config-typescript': 12.0.0
@@ -31,7 +31,7 @@ dependencies:
 
 devDependencies:
   '@formkit/nuxt': 1.0.0-beta.12_unocss@0.46.5
-  '@iconify-json/mdi': 1.1.34
+  '@iconify-json/mdi': 1.1.35
   '@nuxt/module-builder': 0.2.1_sass@1.56.1
   '@nuxtjs/eslint-config-typescript': 12.0.0_eslint@8.28.0
   '@unocss/nuxt': 0.46.5
@@ -657,8 +657,8 @@ packages:
     engines: {node: '>=6.9.0'}
     dev: true
 
-  /@iconify-json/mdi/1.1.34:
-    resolution: {integrity: sha512-Jle/BrVmaKMMPVitsO3lbJ8VpXUVCAhfMFAMo0VoxLDX8ZiKiQyVDHXPug9wGaXYb9mrFZE4UWVK63Cjx8L3rQ==}
+  /@iconify-json/mdi/1.1.35:
+    resolution: {integrity: sha512-xphV75eI+isNlqi5Ro0k4RDroNkUswQtlHszVcnzuJvSlrg11i+lBqULVXtF95qn4cOsbGMHwkbe3W7phBZI7A==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
@@ -1896,12 +1896,6 @@ packages:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
       acorn: 8.8.1
-    dev: true
-
-  /acorn/8.8.0:
-    resolution: {integrity: sha512-QOxyigPVrpZ2GXT+PFyZTl6TtOFc5egxHIP9IlQ+RbupQuX4RkT/Bee4/kQuC02Xkzg84JcT7oLYtDIQxp+v7w==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
     dev: true
 
   /acorn/8.8.1:
@@ -7082,7 +7076,7 @@ packages:
   /unplugin/0.10.2:
     resolution: {integrity: sha512-6rk7GUa4ICYjae5PrAllvcDeuT8pA9+j5J5EkxbMFaV+SalHhxZ7X2dohMzu6C3XzsMT+6jwR/+pwPNR3uK9MA==}
     dependencies:
-      acorn: 8.8.0
+      acorn: 8.8.1
       chokidar: 3.5.3
       webpack-sources: 3.2.3
       webpack-virtual-modules: 0.4.5
