@@ -53,7 +53,6 @@ export default defineNuxtModule<ModuleOptions>({
     useFormkit: true
   },
   async setup(moduleOptions, nuxt) {
-    if (moduleOptions.addPlugin) {
       nuxt.options.runtimeConfig.public.primevue = defu(nuxt.options.runtimeConfig.public.primevue,
         {
           config: moduleOptions.config,
@@ -109,5 +108,4 @@ export default defineNuxtModule<ModuleOptions>({
       addComponent({name: 'PrimeDemoForm', filePath: resolve(runtimeDir, 'components/demo/PrimeDemoForm.vue')})
 
     }
-  }
 })

@@ -1,4 +1,4 @@
-import MyModule from '..'
+import NUXT_PRIMEVUE from '..'
 import {defaultPrimeVueComponents} from "../src/runtime/primevueComponents";
 
 export default defineNuxtConfig({
@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@formkit/nuxt',
-    MyModule
+    NUXT_PRIMEVUE
   ],
   primevue: {
     addPlugin: true,

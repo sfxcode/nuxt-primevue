@@ -1,10 +1,12 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@anu-vue/preset-theme-default': ^0.12.0
   '@formkit/nuxt': 1.0.0-beta.14
   '@iconify-json/mdi': ^1.1.44
   '@nuxt/kit': ^3.0.0
-  '@nuxt/module-builder': latest
+  '@nuxt/module-builder': ^0.2.1
+  '@nuxt/schema': ^3.0.0
   '@nuxtjs/eslint-config-typescript': 12.0.0
   '@sfxcode/formkit-primevue': '>=0.9.5'
   '@unocss/nuxt': ^0.48.4
@@ -30,9 +32,11 @@ dependencies:
   primevue: 3.22.3_primeicons@6.0.1
 
 devDependencies:
+  '@anu-vue/preset-theme-default': 0.12.0
   '@formkit/nuxt': 1.0.0-beta.14_unocss@0.48.4
   '@iconify-json/mdi': 1.1.44
   '@nuxt/module-builder': 0.2.1_sass@1.57.1
+  '@nuxt/schema': 3.0.0
   '@nuxtjs/eslint-config-typescript': 12.0.0_eslint@8.32.0
   '@unocss/nuxt': 0.48.4
   '@vueuse/nuxt': 9.11.1_nuxt@3.0.0
@@ -178,6 +182,12 @@ packages:
 
   /@antfu/utils/0.7.2:
     resolution: {integrity: sha512-vy9fM3pIxZmX07dL+VX1aZe7ynZ+YyB0jY+jE6r3hOK6GNY2t6W8rzpFC4tgpbXUYABkFQwgJq2XYXlxbXAI0g==}
+
+  /@anu-vue/preset-theme-default/0.12.0:
+    resolution: {integrity: sha512-a835rCYXo3heLW+Zfucdr+i/GqgbQQgiAfWoYyNL3CzJIUc3ZDu/EgiCBIquKhGJQqJEGG4sYmMrQh2vjKls0Q==}
+    dependencies:
+      defu: 6.1.1
+    dev: true
 
   /@babel/code-frame/7.18.6:
     resolution: {integrity: sha512-TDCmlK5eOvH+eH7cdAFlNXeVJqWIQ7gW9tY1GJIpUtFb6CmjVyq2VM3u71bOyR8CRihcCgMUYoDNyLXao3+70Q==}

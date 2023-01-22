@@ -39,9 +39,11 @@
     "primevue": ">=3.22.3"
   },
   "devDependencies": {
-    "@iconify-json/mdi": "^1.1.44",
+    "@anu-vue/preset-theme-default": "^0.12.0",
     "@formkit/nuxt": "1.0.0-beta.14",
-    "@nuxt/module-builder": "latest",
+    "@iconify-json/mdi": "^1.1.44",
+    "@nuxt/module-builder": "^0.2.1",
+    "@nuxt/schema": "^3.0.0",
     "@nuxtjs/eslint-config-typescript": "12.0.0",
     "@unocss/nuxt": "^0.48.4",
     "@vueuse/nuxt": "^9.11.1",
