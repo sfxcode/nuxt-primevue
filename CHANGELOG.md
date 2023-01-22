@@ -1,3 +1,23 @@
+### [0.9.5](https://github.com/sfxcode/nuxt-primevue/compare/v0.9.4...v0.9.5) (2023-01-22)
+
+
+### Documentation
+
+* **pages:** Add Configuration Docs ([353b1d4](https://github.com/sfxcode/nuxt-primevue/commit/353b1d46870e6a858de96afeb7dc1febd5b073b8))
+* **pages:** Add Configuration Docs ([f4483c0](https://github.com/sfxcode/nuxt-primevue/commit/f4483c0e4ac0a31530bda7390b6e02a232a22d3a))
+* **pages:** Add Configuration Docs ([aa2eb63](https://github.com/sfxcode/nuxt-primevue/commit/aa2eb63b4c73b4efc57f25cb4596e81010b68c95))
+* **pages:** Add Get Started in Guide ([8f166ac](https://github.com/sfxcode/nuxt-primevue/commit/8f166ac1fd43284f93e16494be6fdae92036f3cf))
+
+
+### Maintenance
+
+* **Action:** Add Gihub Pages action ([db8df29](https://github.com/sfxcode/nuxt-primevue/commit/db8df29c5bb017ceace86c7ad1f70883e4103f49))
+* **Action:** Add Gihub Pages action ([c6dc332](https://github.com/sfxcode/nuxt-primevue/commit/c6dc332ae8cd659323379d0d0dcc4fe41749f826))
+* **Action:** Add Gihub Pages action ([e2ab585](https://github.com/sfxcode/nuxt-primevue/commit/e2ab585fc753458567c34a43a2c5b4baf3a87562))
+* **Action:** Add Gihub Pages action ([ea79991](https://github.com/sfxcode/nuxt-primevue/commit/ea79991b18ac59c39a586fed23d223ceb4a24832))
+* **Action:** Add Gihub Pages action ([4438d6d](https://github.com/sfxcode/nuxt-primevue/commit/4438d6d5591aab0ac27d0a369a6d4193f3396482))
+* **Dependecies:** formkit-primevue 0.9.5 ([2e18c0d](https://github.com/sfxcode/nuxt-primevue/commit/2e18c0dd81e454ea7e1c08e163039a4cd95203f5))
+
 ### [0.9.4](https://github.com/sfxcode/nuxt-primevue/compare/v0.8.4...v0.9.4) (2022-11-19)
 
 
@@ -8,6 +28,7 @@
 
 ### Documentation
 
+* **Vitepress:** Add Documentation ([3a91268](https://github.com/sfxcode/nuxt-primevue/commit/3a91268f108107c43204867344048eee4b0a9390))
 * **Vitepress:** Add Documentation ([8a39dc1](https://github.com/sfxcode/nuxt-primevue/commit/8a39dc139bf1076190bccae510395f19d2f89d69))
 
 
