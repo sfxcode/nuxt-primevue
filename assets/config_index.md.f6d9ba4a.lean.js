@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as a,a as o}from"./app.ea4d67fa.js";const u=JSON.parse('{"title":"Module Configuration","description":"","frontmatter":{},"headers":[],"relativePath":"config/index.md"}'),l={name:"config/index.md"},p=o("",32),e=[p];function t(r,c,i,F,y,D){return n(),a("div",null,e)}const d=s(l,[["render",t]]);export{u as __pageData,d as default};
