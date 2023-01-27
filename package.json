@@ -57,7 +57,8 @@
     "sass": "^1.57.1",
     "unocss": "^0.49.1",
     "vitepress": "1.0.0-alpha.40",
-    "vitepress-plugin-search": "1.0.4-alpha.18"
+    "vitepress-plugin-search": "1.0.4-alpha.18",
+    "@types/node": "^18.11.18"
   },
   "keywords": [
     "nuxt",
