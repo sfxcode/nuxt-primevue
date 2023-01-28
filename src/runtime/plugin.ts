@@ -17,7 +17,7 @@ import {useRuntimeConfig} from "nuxt/app";
 
 export default defineNuxtPlugin((nuxtApp) => {
   const app = nuxtApp.vueApp
-  let primevueConfig: PrimeVueConfiguration = {ripple: true}
+  let primevueConfig: PrimeVueConfiguration = {}
 
   const runtimeConfig = useRuntimeConfig()
   const moduleConfig: PrimeVueConfiguration = runtimeConfig?.primevue?.config

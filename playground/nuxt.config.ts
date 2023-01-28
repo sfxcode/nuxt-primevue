@@ -1,4 +1,4 @@
-import NUXT_PRIMEVUE from '..'
+import NuxtPrimeVue from '..'
 import {defaultPrimeVueComponents} from "../src/runtime/primevueComponents";
 
 export default defineNuxtConfig({
@@ -7,10 +7,9 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@formkit/nuxt',
-    NUXT_PRIMEVUE
+    NuxtPrimeVue
   ],
   primevue: {
-    addPlugin: true,
     config: {
       ripple: true
     },
@@ -37,7 +36,4 @@ export default defineNuxtConfig({
     '@sfxcode/formkit-primevue/dist/sass/formkit-prime-inputs.scss',
     '@sfxcode/formkit-primevue/dist/sass/formkit-primevue.scss'
   ],
-  build: {
-    transpile: ['primevue']
-  }
 })

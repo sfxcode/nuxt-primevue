@@ -1,6 +1,6 @@
 import {resolve} from 'path'
 import {fileURLToPath} from 'url'
-import {defineNuxtModule, addPlugin, addComponent, addImportsDir} from '@nuxt/kit'
+import {defineNuxtModule, addPlugin, addComponent, addImportsDir, createResolver} from '@nuxt/kit'
 import type {PrimeVueConfiguration} from './types'
 import defu from 'defu'
 import {
@@ -10,7 +10,7 @@ import {
   PrimeVueComponent
 } from "./runtime/primevueComponents";
 import consola from 'consola'
-import { name, version } from '../package.json'
+import {name, version} from '../package.json'
 
 export {PrimeVueConfiguration}
 
@@ -24,10 +24,11 @@ export interface ModuleOptions {
   }
   useFormkit: boolean
 }
+
 // #endregion options
 
-async function registerComponent(component: PrimeVueComponent, registeredNames:string[]) {
-  if (! registeredNames.includes(component.name)) {
+async function registerComponent(component: PrimeVueComponent, registeredNames: string[]) {
+  if (!registeredNames.includes(component.name)) {
     await addComponent({
       export: 'default',
       filePath: `primevue/${component.name.toLowerCase()}`,
@@ -53,59 +54,58 @@ export default defineNuxtModule<ModuleOptions>({
     useFormkit: true
   },
   async setup(moduleOptions, nuxt) {
-      nuxt.options.runtimeConfig.public.primevue = defu(nuxt.options.runtimeConfig.public.primevue,
-        {
-          config: moduleOptions.config,
-        },
-      )
+    const runtimeDir = fileURLToPath(new URL('./runtime', import.meta.url))
 
-      const runtimeDir = fileURLToPath(new URL('./runtime', import.meta.url))
-      nuxt.options.build.transpile.push(runtimeDir)
+    nuxt.options.runtimeConfig.public.primevue = defu(nuxt.options.runtimeConfig.public.primevue,
+      {
+        config: moduleOptions.config,
+      },
+    )
+    nuxt.options.build.transpile.push(runtimeDir)
+    nuxt.options.build.transpile.push('primevue')
 
-      addPlugin({
-        src: resolve(runtimeDir, 'plugin')
-      })
+    const resolver = createResolver(import.meta.url)
+    addPlugin(resolver.resolve('./runtime/plugin'))
 
-      async function addComponents(components:Array<PrimeVueComponent | string>)  {
-        for (const value of components) {
-          if (typeof value === 'string') {
-            const component = {} as PrimeVueComponent
-            component.name = value
-            component.global = false
+    async function addComponents(components: Array<PrimeVueComponent | string>) {
+      for (const value of components) {
+        if (typeof value === 'string') {
+          const component = {} as PrimeVueComponent
+          component.name = value
+          component.global = false
+          await registerComponent(component, registeredNames)
+          registeredNames = [...registeredNames, value]
+        } else {
+          const component = value as PrimeVueComponent
+          await registerComponent(component, registeredNames)
+          registeredNames = [...registeredNames, component.name]
+        }
+      }
+    }
+
+    let registeredNames: string[] = []
+    if (moduleOptions.components?.include && moduleOptions.components?.include.length > 0) {
+      await addComponents(moduleOptions.components?.include)
+    } else {
+      for (const component of defaultPrimeVueComponents(moduleOptions.useFormkit)) {
+        if (!moduleOptions.components?.exclude || !moduleOptions.components?.exclude.includes(component.name)) {
+          if (!defaultPrimevueExcludeComponentNames.includes(component.name)) {
             await registerComponent(component, registeredNames)
-            registeredNames = [...registeredNames, value]
-          }
-          else {
-            const component = value as PrimeVueComponent
-            await registerComponent(component,registeredNames)
             registeredNames = [...registeredNames, component.name]
           }
         }
       }
-
-      let registeredNames:string[] = []
-      if (moduleOptions.components?.include && moduleOptions.components?.include.length > 0) {
-        await addComponents(moduleOptions.components?.include)
-      } else {
-        for (const component of defaultPrimeVueComponents(moduleOptions.useFormkit)) {
-          if (!moduleOptions.components?.exclude || !moduleOptions.components?.exclude.includes(component.name)  ) {
-            if (! defaultPrimevueExcludeComponentNames.includes(component.name)) {
-              await registerComponent(component, registeredNames)
-              registeredNames = [...registeredNames, component.name]
-            }
-          }
-        }
-      }
-      if (moduleOptions.components?.force)
-        await addComponents(moduleOptions.components?.force)
-
-      consola.info('[@sfxcode/nuxt-primevue] ' + registeredNames.length + ' of '+ (defaultPrimevueComponentNames.length + defaultPrimevueExcludeComponentNames.length) + ' PrimeVue Components added, finetetuning if needed by components in module options')
-      // consola.info(registeredNames)
-
-      addImportsDir(resolve(runtimeDir, 'composables'))
-
-      addComponent({name: 'PrimeDemoToast', filePath: resolve(runtimeDir, 'components/demo/PrimeDemoToast.vue')})
-      addComponent({name: 'PrimeDemoForm', filePath: resolve(runtimeDir, 'components/demo/PrimeDemoForm.vue')})
-
     }
+    if (moduleOptions.components?.force)
+      await addComponents(moduleOptions.components?.force)
+
+    consola.info('[@sfxcode/nuxt-primevue] ' + registeredNames.length + ' of ' + (defaultPrimevueComponentNames.length + defaultPrimevueExcludeComponentNames.length) + ' PrimeVue Components added, finetetuning if needed by components in module options')
+    // consola.info(registeredNames)
+
+    addImportsDir(resolve(runtimeDir, 'composables'))
+
+    await addComponent({name: 'PrimeDemoToast', filePath: resolve(runtimeDir, 'components/demo/PrimeDemoToast.vue')})
+    await addComponent({name: 'PrimeDemoForm', filePath: resolve(runtimeDir, 'components/demo/PrimeDemoForm.vue')})
+
+  }
 })
