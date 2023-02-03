@@ -16,4 +16,9 @@
 
 </template>
 
-<style scoped></style>
+<style scoped>
+
+body {
+  font-size: 14px;
+}
+</style>
