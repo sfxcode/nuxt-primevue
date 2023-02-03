@@ -1,15 +1,13 @@
 import { ref } from 'vue'
 
 export function usePrimeDataTable() {
-  // @ts-expect-error Need Error Masking
-  const tableData: Ref<any[]> = ref([])
+  const tableData = ref([])
 
   const filters = ref({})
-  const dataTableRef = ref<HTMLElement | null>(null)
+  const dataTableRef = ref()
 
   function exportCSV() {
-    // @ts-expect-error Need Error Masking
-    dataTableRef.value.exportCSV()
+    dataTableRef.value?.exportCSV()
   }
 
   return {
