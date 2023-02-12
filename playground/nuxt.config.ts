@@ -2,7 +2,7 @@ import NuxtPrimeVue from '..'
 import {defaultPrimeVueComponents} from "../src/runtime/primevueComponents";
 
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
   modules: [
     '@vueuse/nuxt',
     '@unocss/nuxt',
@@ -36,4 +36,7 @@ export default defineNuxtConfig({
     '@sfxcode/formkit-primevue/dist/sass/formkit-prime-inputs.scss',
     '@sfxcode/formkit-primevue/dist/sass/formkit-primevue.scss'
   ],
+  build: {
+    transpile: ['nuxt', 'primevue']
+  }
 })
