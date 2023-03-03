@@ -1,7 +1,6 @@
 import {resolve} from 'path'
 import {fileURLToPath} from 'url'
 import {defineNuxtModule, addPlugin, addComponent, addImportsDir, createResolver} from '@nuxt/kit'
-import type {PrimeVueConfiguration} from './types'
 import defu from 'defu'
 import {
   defaultPrimevueComponentNames,
@@ -11,8 +10,8 @@ import {
 } from "./runtime/primevueComponents";
 import consola from 'consola'
 import {name, version} from '../package.json'
+import {PrimeVueConfiguration} from "./runtime/primevueConfig";
 
-export {PrimeVueConfiguration}
 
 // #region options
 export interface ModuleOptions {

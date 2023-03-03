@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   ],
   primevue: {
     config: {
-      ripple: true
+      ripple: true,
     },
     components: {
       include: [...defaultPrimeVueComponents(true, true)],

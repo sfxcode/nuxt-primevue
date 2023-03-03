@@ -12,8 +12,8 @@ import {defineNuxtPlugin} from '#app'
 import ConfirmationService from 'primevue/confirmationservice'
 import ToastService from 'primevue/toastservice'
 
-import {PrimeVueConfiguration} from "../types";
 import {useRuntimeConfig} from "nuxt/app";
+import {PrimeVueConfiguration} from "./primevueConfig";
 
 export default defineNuxtPlugin((nuxtApp) => {
   const app = nuxtApp.vueApp

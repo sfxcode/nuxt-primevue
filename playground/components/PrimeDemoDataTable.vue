@@ -9,11 +9,18 @@ filters.value = {
   inventoryStatus: { value: null, matchMode: FilterMatchMode.STARTS_WITH },
 }
 
-const { pending, data: products, error } = useLazyFetch('/api/products')
+const { pending, data: products, error, refresh } = useLazyFetch('/api/products')
+
 
 
 watch(products, (newProducts) => {
+  console.log(newProducts.value)
   tableData.value = newProducts?.data
+})
+
+onMounted(() => {
+  console.log('mounted')
+  refresh()
 })
 
 </script>
@@ -30,7 +37,7 @@ watch(products, (newProducts) => {
     <div v-if="pending">
       <h6>Loading ...</h6>
     </div>
-    <div v-else>
+    <div v-if="tableData">
       <DataTable
         ref="dataTableRef" v-model:filters="filters" :value="tableData"
         data-key="name" :global-filter-fields="['name', 'code', 'inventoryStatus']"
@@ -68,6 +75,7 @@ watch(products, (newProducts) => {
       </DataTable>
     </div>
   </div>
+
 </template>
 
 <style scoped></style>
