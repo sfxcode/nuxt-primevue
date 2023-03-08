@@ -5,29 +5,29 @@ import { ref, reactive } from 'vue'
 const options = [
   { label: 'Every page load', value: 'refresh' },
   { label: 'Ever hour', value: 'hourly' },
-  { label: 'Every day', value: 'daily' },
+  { label: 'Every day', value: 'daily' }
 ]
 
 const schema = reactive(
   [
     {
       $el: 'h1',
-      children: ['Validation with FormKit'],
+      children: ['Validation with FormKit']
     },
     {
       $el: 'h3',
-      children: ['Inputs from PrimeVue'],
+      children: ['Inputs from PrimeVue']
     },
     {
       $el: 'h3',
-      children: ['Validation by FormKit'],
+      children: ['Validation by FormKit']
     },
     {
       $formkit: 'primeInputText',
       name: 'email',
       label: 'Email',
       help: 'This will be used for your account.',
-      validation: 'required|email',
+      validation: 'required|email'
 
     },
     {
@@ -35,14 +35,14 @@ const schema = reactive(
       name: 'myText',
       label: 'Text',
       validation: '',
-      rows: '5',
+      rows: '5'
     },
     {
       $formkit: 'primeCalendar',
       name: 'myCalendar',
       label: 'Calendar',
       validation: '',
-      showIcon: true,
+      showIcon: true
 
     },
     {
@@ -51,7 +51,7 @@ const schema = reactive(
       label: 'Password',
       help: 'Enter your new password.',
       validation: 'required|length:5,16',
-      validationVisibility: 'live',
+      validationVisibility: 'live'
     },
     {
       $formkit: 'primePassword',
@@ -61,13 +61,13 @@ const schema = reactive(
       feedback: false,
       help: 'Enter your new password again to confirm it.',
       validation: 'required|confirm',
-      validationLabel: 'password confirmation',
+      validationLabel: 'password confirmation'
     },
     {
       $formkit: 'primeCheckbox',
       name: 'eu_citizen',
       id: 'eu',
-      label: 'Are you a european citizen?',
+      label: 'Are you a european citizen?'
 
     },
     {
@@ -80,7 +80,7 @@ const schema = reactive(
       filter: false,
       options,
       help: 'How often should we display a cookie notice?',
-      class: 'test',
+      class: 'test'
 
     },
     {
@@ -89,20 +89,20 @@ const schema = reactive(
       label: 'Max messages',
       min: 5,
       step: 5,
-      value: 10,
+      value: 10
     },
     {
       $formkit: 'primeChips',
       name: 'chips',
-      label: 'Use Chips',
+      label: 'Use Chips'
     },
     {
       $formkit: 'primeKnob',
       name: 'knob',
       label: 'Use Knob',
-      value: 50,
-    },
-  ],
+      value: 50
+    }
+  ]
 )
 
 const data = ref({})
@@ -115,7 +115,7 @@ const submitHandler = async () => {
 
 <template>
   <div>
-    <div class="myFormkit" v-focustrap>
+    <div v-focustrap class="myFormkit">
       <FormKit
         id="form"
         v-model="data"
@@ -132,4 +132,3 @@ const submitHandler = async () => {
     <pre>{{ data }}</pre>
   </div>
 </template>
-

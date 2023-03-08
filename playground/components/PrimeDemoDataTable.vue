@@ -1,4 +1,5 @@
 <script setup lang='ts'>
+
 import { FilterMatchMode } from 'primevue/api'
 const { tableData, filters, dataTableRef, exportCSV } = usePrimeDataTable()
 
@@ -6,12 +7,10 @@ filters.value = {
   global: { value: null, matchMode: FilterMatchMode.CONTAINS },
   name: { value: null, matchMode: FilterMatchMode.CONTAINS },
   code: { value: null, matchMode: FilterMatchMode.CONTAINS },
-  inventoryStatus: { value: null, matchMode: FilterMatchMode.STARTS_WITH },
+  inventoryStatus: { value: null, matchMode: FilterMatchMode.STARTS_WITH }
 }
 
 const { pending, data: products, error, refresh } = useLazyFetch('/api/products')
-
-
 
 watch(products, (newProducts) => {
   console.log(newProducts.value)
@@ -39,10 +38,14 @@ onMounted(() => {
     </div>
     <div v-if="tableData">
       <DataTable
-        ref="dataTableRef" v-model:filters="filters" :value="tableData"
-        data-key="name" :global-filter-fields="['name', 'code', 'inventoryStatus']"
+        ref="dataTableRef"
+        v-model:filters="filters"
+        :value="tableData"
+        data-key="name"
+        :global-filter-fields="['name', 'code', 'inventoryStatus']"
         striped-rows
-        :paginator="true" :rows="8"
+        :paginator="true"
+        :rows="8"
         paginator-template="CurrentPageReport FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown"
         :rows-per-page-options="[8, 15, 50]"
         current-page-report-template="Showing {first} to {last} of {totalRecords}"
@@ -75,7 +78,6 @@ onMounted(() => {
       </DataTable>
     </div>
   </div>
-
 </template>
 
 <style scoped></style>

@@ -1,11 +1,11 @@
 
-export const defaultPrimevueExcludeComponentNames:Array<string>  = [
+export const defaultPrimevueExcludeComponentNames:Array<string> = [
   'Chart',
   'Editor',
-  'FullCalendar',
+  'FullCalendar'
 ]
 
-export const defaultPrimevueComponentNames:Array<string>  = [
+export const defaultPrimevueComponentNames:Array<string> = [
   'Accordion',
   'AccordionTab',
   'AutoComplete',
@@ -98,14 +98,14 @@ export const defaultPrimevueComponentNames:Array<string>  = [
   'VirtualScroller'
 ]
 
-export const defaultPrimevueGlobalComponentNames:Array<string>  = [
+export const defaultPrimevueGlobalComponentNames:Array<string> = [
   'ConfirmDialog',
   'ConfirmPopup',
   'Toast',
   'Tooltip'
 ]
 
-export const defaultPrimevueFormkitGlobalComponentNames:Array<string>  = [
+export const defaultPrimevueFormkitGlobalComponentNames:Array<string> = [
   ...defaultPrimevueGlobalComponentNames,
   'Calendar',
   'Checkbox',
@@ -125,32 +125,24 @@ export const defaultPrimevueFormkitGlobalComponentNames:Array<string>  = [
   'Slider',
   'Textarea',
   'ToggleButton',
-  'TriStateCheckbox',
+  'TriStateCheckbox'
 ]
-
 
 export interface PrimeVueComponent {
   name: string
   global: boolean
 }
 
-
-export function defaultPrimeVueComponents(useFormkit: boolean, onlyGlobal:boolean=false)  {
+export function defaultPrimeVueComponents (useFormkit: boolean, onlyGlobal = false) {
   let names = defaultPrimevueComponentNames
-  if (onlyGlobal)  {
-    if (useFormkit)
-      names = [...defaultPrimevueFormkitGlobalComponentNames]
-    else
-      names = [...defaultPrimevueGlobalComponentNames]
+  if (onlyGlobal) {
+    if (useFormkit) { names = [...defaultPrimevueFormkitGlobalComponentNames] } else { names = [...defaultPrimevueGlobalComponentNames] }
   }
 
-  return names.map(s => {
+  return names.map((s) => {
     const component = {} as PrimeVueComponent
     component.name = s
-    if (useFormkit)
-      component.global = defaultPrimevueFormkitGlobalComponentNames.includes(s)
-    else
-      component.global = defaultPrimevueGlobalComponentNames.includes(s)
+    if (useFormkit) { component.global = defaultPrimevueFormkitGlobalComponentNames.includes(s) } else { component.global = defaultPrimevueGlobalComponentNames.includes(s) }
     return component
   })
 }

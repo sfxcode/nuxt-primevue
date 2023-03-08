@@ -1,17 +1,16 @@
-import {resolve} from 'path'
-import {fileURLToPath} from 'url'
-import {defineNuxtModule, addPlugin, addComponent, addImportsDir, createResolver} from '@nuxt/kit'
+import { resolve } from 'path'
+import { fileURLToPath } from 'url'
+import { defineNuxtModule, addPlugin, addComponent, addImportsDir, createResolver } from '@nuxt/kit'
 import defu from 'defu'
+import consola from 'consola'
+import { name, version } from '../package.json'
 import {
   defaultPrimevueComponentNames,
   defaultPrimeVueComponents,
   defaultPrimevueExcludeComponentNames,
   PrimeVueComponent
-} from "./runtime/primevueComponents";
-import consola from 'consola'
-import {name, version} from '../package.json'
-import {PrimeVueConfiguration} from "./runtime/primevueConfig";
-
+} from './runtime/primevueComponents'
+import { PrimeVueConfiguration } from './runtime/primevueConfig'
 
 // #region options
 export interface ModuleOptions {
@@ -26,7 +25,7 @@ export interface ModuleOptions {
 
 // #endregion options
 
-async function registerComponent(component: PrimeVueComponent, registeredNames: string[]) {
+async function registerComponent (component: PrimeVueComponent, registeredNames: string[]) {
   if (!registeredNames.includes(component.name)) {
     await addComponent({
       export: 'default',
@@ -43,8 +42,8 @@ export default defineNuxtModule<ModuleOptions>({
     version,
     configKey: 'primevue',
     compatibility: {
-      nuxt: '^3.0.0',
-    },
+      nuxt: '^3.0.0'
+    }
   },
   defaults: {
     config: {
@@ -52,13 +51,13 @@ export default defineNuxtModule<ModuleOptions>({
     },
     useFormkit: true
   },
-  async setup(moduleOptions, nuxt) {
+  async setup (moduleOptions, nuxt) {
     const runtimeDir = fileURLToPath(new URL('./runtime', import.meta.url))
 
     nuxt.options.runtimeConfig.public.primevue = defu(nuxt.options.runtimeConfig.public.primevue,
       {
-        config: moduleOptions.config,
-      },
+        config: moduleOptions.config
+      }
     )
     nuxt.options.build.transpile.push(runtimeDir)
     nuxt.options.build.transpile.push('primevue')
@@ -66,7 +65,7 @@ export default defineNuxtModule<ModuleOptions>({
     const resolver = createResolver(import.meta.url)
     addPlugin(resolver.resolve('./runtime/plugin'))
 
-    async function addComponents(components: Array<PrimeVueComponent | string>) {
+    async function addComponents (components: Array<PrimeVueComponent | string>) {
       for (const value of components) {
         if (typeof value === 'string') {
           const component = {} as PrimeVueComponent
@@ -95,16 +94,14 @@ export default defineNuxtModule<ModuleOptions>({
         }
       }
     }
-    if (moduleOptions.components?.force)
-      await addComponents(moduleOptions.components?.force)
+    if (moduleOptions.components?.force) { await addComponents(moduleOptions.components?.force) }
 
     consola.info('[@sfxcode/nuxt-primevue] ' + registeredNames.length + ' of ' + (defaultPrimevueComponentNames.length + defaultPrimevueExcludeComponentNames.length) + ' PrimeVue Components added, finetetuning if needed by components in module options')
     // consola.info(registeredNames)
 
     addImportsDir(resolve(runtimeDir, 'composables'))
 
-    await addComponent({name: 'PrimeDemoToast', filePath: resolve(runtimeDir, 'components/demo/PrimeDemoToast.vue')})
-    await addComponent({name: 'PrimeDemoForm', filePath: resolve(runtimeDir, 'components/demo/PrimeDemoForm.vue')})
-
+    await addComponent({ name: 'PrimeDemoToast', filePath: resolve(runtimeDir, 'components/demo/PrimeDemoToast.vue') })
+    await addComponent({ name: 'PrimeDemoForm', filePath: resolve(runtimeDir, 'components/demo/PrimeDemoForm.vue') })
   }
 })

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useNuxtApp } from "#app/nuxt"
+import { useNuxtApp } from '#app/nuxt'
 
 const app = useNuxtApp()
 </script>
@@ -9,4 +9,3 @@ const app = useNuxtApp()
     <NuxtPage />
   </div>
 </template>
-

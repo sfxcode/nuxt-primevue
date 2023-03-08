@@ -50,7 +50,6 @@ const showError = () => {
       Error Message Content
     </Message>
   </div>
-
 </template>
 
 <style scoped></style>

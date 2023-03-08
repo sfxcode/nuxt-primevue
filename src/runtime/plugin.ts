@@ -5,15 +5,15 @@ import BadgeDirective from 'primevue/badgedirective'
 import Ripple from 'primevue/ripple'
 import StyleClass from 'primevue/styleclass'
 import Tooltip from 'primevue/tooltip'
-import FocusTrap from 'primevue/focustrap';
+import FocusTrap from 'primevue/focustrap'
 
 // services
-import {defineNuxtPlugin} from '#app'
+import { defineNuxtPlugin } from '#app'
 import ConfirmationService from 'primevue/confirmationservice'
 import ToastService from 'primevue/toastservice'
 
-import {useRuntimeConfig} from "nuxt/app";
-import {PrimeVueConfiguration} from "./primevueConfig";
+import { useRuntimeConfig } from 'nuxt/app'
+import { PrimeVueConfiguration } from './primevueConfig'
 
 export default defineNuxtPlugin((nuxtApp) => {
   const app = nuxtApp.vueApp
@@ -33,9 +33,8 @@ export default defineNuxtPlugin((nuxtApp) => {
   app.directive('ripple', Ripple)
   app.directive('tooltip', Tooltip)
   app.directive('styleclass', StyleClass)
-  app.directive('focustrap', FocusTrap);
+  app.directive('focustrap', FocusTrap)
   // services
   app.use(ConfirmationService)
   app.use(ToastService)
-
 })

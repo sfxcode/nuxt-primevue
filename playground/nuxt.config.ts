@@ -1,5 +1,5 @@
 import NuxtPrimeVue from '..'
-import {defaultPrimeVueComponents} from "../src/runtime/primevueComponents";
+import { defaultPrimeVueComponents } from '../src/runtime/primevueComponents'
 
 export default defineNuxtConfig({
   ssr: true,
@@ -9,13 +9,14 @@ export default defineNuxtConfig({
     '@formkit/nuxt',
     NuxtPrimeVue
   ],
+
   primevue: {
     config: {
-      ripple: true,
+      ripple: true
     },
     components: {
       include: [...defaultPrimeVueComponents(true, true)],
-      force: ['DataTable', 'Column', 'Button',{name:'Message', global:true}],
+      force: ['DataTable', 'Column', 'Button', { name: 'Message', global: true }]
     }
   },
   unocss: {

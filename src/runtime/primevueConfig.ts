@@ -1,10 +1,3 @@
-export interface PrimeVueConfiguration {
-  ripple?: boolean;
-  inputStyle?: string;
-  locale?: PrimeVueLocaleOptions;
-  filterMatchModeOptions?: any;
-  zIndex?: PrimeVueZIndexOptions;
-}
 
 export interface PrimeVueZIndexOptions {
   modal?: number;
@@ -130,4 +123,11 @@ export interface PrimeVueLocaleOptions {
   emptySearchMessage?: string;
   emptyMessage?: string;
   aria?: PrimeVueLocaleAriaOptions;
+}
+export interface PrimeVueConfiguration {
+  ripple?: boolean;
+  inputStyle?: string;
+  locale?: PrimeVueLocaleOptions;
+  filterMatchModeOptions?: any;
+  zIndex?: PrimeVueZIndexOptions;
 }
