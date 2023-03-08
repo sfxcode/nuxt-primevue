@@ -1,3 +1,5 @@
+import { ref } from 'vue'
+
 export function usePrimeDataTable () {
   const tableData = ref([])
 
