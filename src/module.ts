@@ -96,12 +96,14 @@ export default defineNuxtModule<ModuleOptions>({
     }
     if (moduleOptions.components?.force) { await addComponents(moduleOptions.components?.force) }
 
-    consola.info('[@sfxcode/nuxt-primevue] ' + registeredNames.length + ' of ' + (defaultPrimevueComponentNames.length + defaultPrimevueExcludeComponentNames.length) + ' PrimeVue Components added, finetetuning if needed by components in module options')
+    consola.info('[@sfxcode/nuxt-primevue] ' + registeredNames.length + ' of ' + (defaultPrimevueComponentNames.length + defaultPrimevueExcludeComponentNames.length) + ' PrimeVue Components added, finetetuning if needed by components configuration in module options')
     // consola.info(registeredNames)
 
     addImportsDir(resolve(runtimeDir, 'composables'))
 
     await addComponent({ name: 'PrimeDemoToast', filePath: resolve(runtimeDir, 'components/demo/PrimeDemoToast.vue') })
     await addComponent({ name: 'PrimeDemoForm', filePath: resolve(runtimeDir, 'components/demo/PrimeDemoForm.vue') })
+
+    consola.success('[@sfxcode/nuxt-primevue] loaded')
   }
 })

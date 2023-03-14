@@ -1,4 +1,10 @@
-### [1.0.3](https://github.com/sfxcode/nuxt-primevue/compare/v1.0.1...v1.0.3) (2023-03-08)
+### [1.0.4](https://github.com/sfxcode/nuxt-primevue/compare/v1.0.1...v1.0.4) (2023-03-14)
+
+
+### Bug Fixes
+
+* **import:** add ref in usePrimeDataTable ([5606f41](https://github.com/sfxcode/nuxt-primevue/commit/5606f41e2d39c46ae8f6802da3c7a975fa7a58a8))
+* **import:** add ref in usePrimeDataTable ([696ff9d](https://github.com/sfxcode/nuxt-primevue/commit/696ff9d40460abb42c439025a5e67b6bd6d553c0))
 
 
 ### Maintenance

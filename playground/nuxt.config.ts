@@ -2,7 +2,7 @@ import NuxtPrimeVue from '..'
 import { defaultPrimeVueComponents } from '../src/runtime/primevueComponents'
 
 export default defineNuxtConfig({
-  ssr: true,
+  ssr: false,
   modules: [
     '@vueuse/nuxt',
     '@unocss/nuxt',
