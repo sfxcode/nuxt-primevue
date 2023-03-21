@@ -1,1 +1,0 @@
-import{_ as s,o as a,c as n,U as l}from"./chunks/framework.1ad1dd5a.js";const C=JSON.parse('{"title":"About PrimeVue Integration","description":"","frontmatter":{},"headers":[],"relativePath":"guide/primevue.md"}'),o={name:"guide/primevue.md"},p=l("",10),e=[p];function t(c,r,D,F,y,i){return a(),n("div",null,e)}const A=s(o,[["render",t]]);export{C as __pageData,A as default};
