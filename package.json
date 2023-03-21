@@ -1,6 +1,6 @@
 {
   "name": "@sfxcode/nuxt-primevue",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "type": "module",
   "author": {
@@ -34,16 +34,16 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.3.1",
-    "@formkit/nuxt": "1.0.0-beta.15",
-    "@sfxcode/formkit-primevue": "^1.0.1"
+    "@formkit/nuxt": "0.16.4",
+    "@sfxcode/formkit-primevue": "^1.0.2"
   },
   "devDependencies": {
     "@anu-vue/preset-theme-default": "^0.12.0",
     "@iconify-json/mdi": "^1.1.50",
     "@nuxt/module-builder": "^0.2.1",
     "@nuxtjs/eslint-config-typescript": "12.0.0",
-    "@types/node": "^18.15.3",
-    "@unocss/nuxt": "^0.50.4",
+    "@types/node": "^18.15.5",
+    "@unocss/nuxt": "^0.50.6",
     "@vueuse/nuxt": "^9.13.0",
     "anu-vue": "^0.12.0",
     "conventional-changelog-cli": "^2.2.2",
@@ -52,8 +52,8 @@
     "flexsearch": "^0.7.31",
     "markdown-it": "^13.0.1",
     "nuxt": "^3.3.1",
-    "sass": "^1.59.2",
-    "vitepress": "1.0.0-alpha.58",
+    "sass": "^1.59.3",
+    "vitepress": "1.0.0-alpha.61",
     "vitepress-plugin-search": "1.0.4-alpha.19"
   },
   "keywords": [
