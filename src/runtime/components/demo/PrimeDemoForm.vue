@@ -34,7 +34,6 @@ const schema = reactive(
       $formkit: 'primeTextarea',
       name: 'myText',
       label: 'Text',
-      validation: '',
       rows: '5'
     },
     {
@@ -50,8 +49,7 @@ const schema = reactive(
       name: 'password',
       label: 'Password',
       help: 'Enter your new password.',
-      validation: 'required|length:5,16',
-      validationVisibility: 'live'
+      validation: 'required|length:5,16'
     },
     {
       $formkit: 'primePassword',

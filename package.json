@@ -1,6 +1,6 @@
 {
   "name": "@sfxcode/nuxt-primevue",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "license": "MIT",
   "type": "module",
   "author": {
@@ -35,7 +35,7 @@
   "dependencies": {
     "@nuxt/kit": "^3.3.3",
     "@formkit/nuxt": "0.16.4",
-    "@sfxcode/formkit-primevue": "^1.0.3"
+    "@sfxcode/formkit-primevue": "^1.0.5"
   },
   "devDependencies": {
     "@anu-vue/preset-theme-default": "^0.13.1",
