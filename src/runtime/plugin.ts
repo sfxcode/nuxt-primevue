@@ -20,7 +20,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   let primevueConfig: PrimeVueConfiguration = {}
 
   const runtimeConfig = useRuntimeConfig()
-  const moduleConfig: PrimeVueConfiguration = runtimeConfig?.primevue?.config
+  const moduleConfig: PrimeVueConfiguration = runtimeConfig.public.primevue?.config
 
   if (moduleConfig) {
     primevueConfig = moduleConfig
