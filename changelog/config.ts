@@ -6,28 +6,11 @@ const writerOpts = {
       note.title = 'BREAKING CHANGES'
     })
 
-    if (commit.type === 'feat')
-      commit.type = 'Features'
-    else if (commit.type === 'fix')
-      commit.type = 'Bug Fixes'
-    else if (commit.type === 'perf')
-      commit.type = 'Performance Improvements'
-    else if (commit.type === 'revert')
-      commit.type = 'Reverts'
-    else if (commit.type === 'refactor')
-      commit.type = 'Code Refactoring'
-    else if (commit.type === 'chore')
-      commit.type = 'Maintenance'
-    else if (commit.type === 'docs')
-      commit.type = 'Documentation'
-    else
-      return
+    if (commit.type === 'feat') { commit.type = 'Features' } else if (commit.type === 'fix') { commit.type = 'Bug Fixes' } else if (commit.type === 'perf') { commit.type = 'Performance Improvements' } else if (commit.type === 'revert') { commit.type = 'Reverts' } else if (commit.type === 'refactor') { commit.type = 'Code Refactoring' } else if (commit.type === 'chore') { commit.type = 'Maintenance' } else if (commit.type === 'docs') { commit.type = 'Documentation' } else { return }
 
-    if (commit.scope === '*')
-      commit.scope = ''
+    if (commit.scope === '*') { commit.scope = '' }
 
-    if (typeof commit.hash === 'string')
-      commit.shortHash = commit.hash.substring(0, 7)
+    if (typeof commit.hash === 'string') { commit.shortHash = commit.hash.substring(0, 7) }
 
     if (typeof commit.subject === 'string') {
       const url = `${context.packageData.bugs.url}/`
@@ -41,8 +24,7 @@ const writerOpts = {
       if (context.host) {
         // User URLs.
         commit.subject = commit.subject.replace(/\B@([a-z0-9](?:-?[a-z0-9/]){0,38})/g, (_, username) => {
-          if (username.includes('/'))
-            return `@${username}`
+          if (username.includes('/')) { return `@${username}` }
 
           return `[@${username}](${context.host}/${username})`
         })
@@ -58,17 +40,16 @@ const writerOpts = {
   groupBy: 'type',
   commitGroupsSort: 'title',
   commitsSort: ['scope', 'subject'],
-  noteGroupsSort: 'title',
+  noteGroupsSort: 'title'
 }
 
-function issueUrl() {
+function issueUrl () {
   if (pkgJson.repository && pkgJson.repository.url && ~pkgJson.repository.url.indexOf('github.com')) {
     const gitUrl = gufg(pkgJson.repository.url)
 
-    if (gitUrl)
-      return `${gitUrl}/issues/`
+    if (gitUrl) { return `${gitUrl}/issues/` }
   }
 }
 module.exports = {
-  writerOpts,
+  writerOpts
 }

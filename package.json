@@ -1,6 +1,6 @@
 {
   "name": "@sfxcode/nuxt-primevue",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "license": "MIT",
   "type": "module",
   "author": {
@@ -24,6 +24,7 @@
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
     "dev:start": "node playground/.output/server/index.mjs",
+    "lint": "eslint . --fix",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
@@ -33,17 +34,17 @@
     "failOnWarn":false
   },
   "dependencies": {
-    "@nuxt/kit": "^3.3.3",
+    "@nuxt/kit": "^3.4.1",
     "@formkit/nuxt": "0.16.4",
     "@sfxcode/formkit-primevue": "^1.0.5"
   },
   "devDependencies": {
     "@anu-vue/preset-theme-default": "^0.13.1",
     "@iconify-json/mdi": "^1.1.50",
-    "@nuxt/module-builder": "^0.2.1",
+    "@nuxt/module-builder": "^0.3.0",
     "@nuxtjs/eslint-config-typescript": "12.0.0",
     "@types/node": "^18.15.11",
-    "@unocss/nuxt": "^0.51.2",
+    "@unocss/nuxt": "^0.51.4",
     "@vueuse/nuxt": "^9.13.0",
     "anu-vue": "^0.13.1",
     "conventional-changelog-cli": "^2.2.2",
@@ -51,8 +52,8 @@
     "eslint": "^8.38.0",
     "flexsearch": "^0.7.31",
     "markdown-it": "^13.0.1",
-    "nuxt": "^3.3.3",
-    "sass": "^1.61.0",
+    "nuxt": "^3.4.1",
+    "sass": "^1.62.0",
     "vitepress": "1.0.0-alpha.65",
     "vitepress-plugin-search": "1.0.4-alpha.20"
   },

@@ -2,7 +2,7 @@ import { resolve } from 'path'
 import { fileURLToPath } from 'url'
 import { defineNuxtModule, addPlugin, addComponent, addImportsDir, createResolver } from '@nuxt/kit'
 import { defu } from 'defu'
-import consola from 'consola'
+import { consola } from 'consola'
 import { name, version } from '../package.json'
 import {
   defaultPrimevueComponentNames,

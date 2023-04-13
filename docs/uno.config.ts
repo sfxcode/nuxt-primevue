@@ -6,7 +6,7 @@ import {
   presetIcons,
   presetUno,
   transformerDirectives,
-  transformerVariantGroup,
+  transformerVariantGroup
 } from 'unocss'
 
 export default defineConfig({
@@ -15,18 +15,18 @@ export default defineConfig({
     presetIcons({
       scale: 1.2,
       unit: 'em',
-      extraProperties: presetIconExtraProperties,
+      extraProperties: presetIconExtraProperties
 
     }),
 
     // anu-vue presets
     presetAnu(),
-    presetThemeDefault(),
+    presetThemeDefault()
   ],
   transformers: [
     transformerVariantGroup(),
-    transformerDirectives(),
+    transformerDirectives()
   ],
   configDeps: ['../anu-vue/src/presets/theme-default/index.ts'],
-  include: [/.*\/anu-vue\.js(.*)?$/, './**/*.vue', './**/*.md'],
+  include: [/.*\/anu-vue\.js(.*)?$/, './**/*.vue', './**/*.md']
 })
