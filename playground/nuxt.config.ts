@@ -16,7 +16,7 @@ export default defineNuxtConfig({
     },
     components: {
       include: [...defaultPrimeVueComponents(true, true)],
-      force: ['DataTable', 'Column', 'Button', { name: 'Message', global: true }]
+      force: ['DataTable', 'Column', 'Button', 'Toolbar', { name: 'Message', global: true }]
     }
   },
   unocss: {
