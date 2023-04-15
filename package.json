@@ -45,7 +45,7 @@
     "@nuxtjs/eslint-config-typescript": "12.0.0",
     "@types/node": "^18.15.11",
     "@unocss/nuxt": "^0.51.4",
-    "@vueuse/nuxt": "^9.13.0",
+    "@vueuse/nuxt": "^10.0.2",
     "anu-vue": "^0.13.1",
     "conventional-changelog-cli": "^2.2.2",
     "defu": "^6.1.2",
@@ -54,7 +54,7 @@
     "markdown-it": "^13.0.1",
     "nuxt": "^3.4.1",
     "sass": "^1.62.0",
-    "vitepress": "1.0.0-alpha.65",
+    "vitepress": "1.0.0-alpha.66",
     "vitepress-plugin-search": "1.0.4-alpha.20"
   },
   "keywords": [
