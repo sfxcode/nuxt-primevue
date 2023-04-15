@@ -12,9 +12,6 @@ export default defineConfig({
       message: 'VitePress Blog Starter',
       copyright: 'Copyright © 2022 SFXCode',
     },
-    search: {
-      provider: 'local'
-    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/sfxcode/nuxt-primevue' },
     ],
@@ -38,7 +35,7 @@ export default defineConfig({
       Unocss({
         configFile: '../../unocss.config.ts',
       }),
-      // SearchPlugin(),
+      SearchPlugin(),
     ],
   },
 })
