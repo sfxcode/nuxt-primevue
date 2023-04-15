@@ -15,6 +15,7 @@ node_modules
 
 **/.vitepress/cache
 
+
 # Generated dirs
 dist
 

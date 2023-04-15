@@ -1,6 +1,5 @@
 <script setup lang="ts">
 
-import PrimeDemoTipTap from '~/components/PrimeDemoTipTap.vue'
 </script>
 
 <template>
@@ -9,9 +8,6 @@ import PrimeDemoTipTap from '~/components/PrimeDemoTipTap.vue'
       <div class="basis-1/2">
         <div><PrimeDemoToast /></div>
         <div><PrimeDemoDataTable /></div>
-        <div class="pt-5">
-          <PrimeDemoTipTap />
-        </div>
       </div>
       <div class="basis-1/4">
         <PrimeDemoForm />
