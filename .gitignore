@@ -13,6 +13,8 @@ node_modules
 **/.yarn/cache
 **/.yarn/*state*
 
+**/.vitepress/cache
+
 # Generated dirs
 dist
 
