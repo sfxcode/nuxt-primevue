@@ -1,4 +1,9 @@
-### [1.0.9](https://github.com/sfxcode/nuxt-primevue/compare/v1.0.6...v1.0.9) (2023-04-13)
+## [1.1.0](https://github.com/sfxcode/nuxt-primevue/compare/v1.0.6...v1.1.0) (2023-04-16)
+
+
+### Bug Fixes
+
+* **search:** use flex search - local search duplicates the base path ([0e4bbc1](https://github.com/sfxcode/nuxt-primevue/commit/0e4bbc149f4b651c487f79b9da1f65f6979118ce))
 
 
 ### Code Refactoring
@@ -6,11 +11,25 @@
 * **plugin:** Use runtimeConfig.public ([740610e](https://github.com/sfxcode/nuxt-primevue/commit/740610e9a7b45cd7a50334267caa42645ea1d4f6))
 
 
+### Documentation
+
+* **search:** use local search from vitepress ([66a10d3](https://github.com/sfxcode/nuxt-primevue/commit/66a10d30c007f235b7fbf5448a4d87d29adcfa9a))
+
+
+### Features
+
+* **editor:** add tiptap ([c7da733](https://github.com/sfxcode/nuxt-primevue/commit/c7da73348c3ba402ebc82c05c78e7fa35b8692f1))
+* **editor:** add tiptap ([fb2700b](https://github.com/sfxcode/nuxt-primevue/commit/fb2700bfe41677e873a92bbb3ef80f74d59c02c3))
+* **editor:** rollback ([c853482](https://github.com/sfxcode/nuxt-primevue/commit/c8534824341a2da3c93d3dd0849ea2b59330d00f))
+
+
 ### Maintenance
 
 * **dependecies:** formkit-primevue ([92aa37d](https://github.com/sfxcode/nuxt-primevue/commit/92aa37d79a76f6e27382816201a855870043f0d3))
 * **Dependecies:** formkit-primevue 1.0.5 ([a50e8ef](https://github.com/sfxcode/nuxt-primevue/commit/a50e8ef55c367b94ced657a3a30cd86a92e1f61f))
+* **dependecies:** nuxt 3.4.1 ([5b72075](https://github.com/sfxcode/nuxt-primevue/commit/5b72075cc75dcbb8ad27d0901f03f8ab5e14dd15))
 * **dependecies:** nuxt 3.4.1 ([9e5451e](https://github.com/sfxcode/nuxt-primevue/commit/9e5451e8ba30eaa8b0bfa4f466297f65e671d8fe))
+* **dependecies:** update vitepress - use local search ([35931dc](https://github.com/sfxcode/nuxt-primevue/commit/35931dc7bf6dc57642275854e323a3d4f8fc283e))
 
 ### [1.0.6](https://github.com/sfxcode/nuxt-primevue/compare/v1.0.5...v1.0.6) (2023-04-09)
 
