@@ -1,6 +1,5 @@
 import Unocss from 'unocss/vite'
 import { defineConfig } from 'vitepress'
-import { SearchPlugin } from 'vitepress-plugin-search'
 import { version } from '../../package.json'
 
 export default defineConfig({
@@ -11,6 +10,9 @@ export default defineConfig({
     footer: {
       message: 'VitePress Blog Starter',
       copyright: 'Copyright © 2022 SFXCode',
+    },
+    search: {
+      provider: 'local'
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/sfxcode/nuxt-primevue' },
@@ -35,7 +37,6 @@ export default defineConfig({
       Unocss({
         configFile: '../../unocss.config.ts',
       }),
-      SearchPlugin(),
     ],
   },
 })

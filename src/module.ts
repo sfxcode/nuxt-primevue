@@ -103,7 +103,6 @@ export default defineNuxtModule<ModuleOptions>({
 
     await addComponent({ name: 'PrimeDemoToast', filePath: resolve(runtimeDir, 'components/demo/PrimeDemoToast.vue') })
     await addComponent({ name: 'PrimeDemoForm', filePath: resolve(runtimeDir, 'components/demo/PrimeDemoForm.vue') })
-    await addComponent({ name: 'PrimeTipTap', filePath: resolve(runtimeDir, 'components/PrimeTipTap.vue') })
 
     consola.success('[@sfxcode/nuxt-primevue] loaded')
   }
