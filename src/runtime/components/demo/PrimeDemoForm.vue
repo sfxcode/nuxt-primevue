@@ -113,6 +113,7 @@ const submitHandler = async () => {
 
 <template>
   <div>
+    <span class="p-21" />
     <div v-focustrap class="myFormkit">
       <FormKit
         id="form"
@@ -120,6 +121,8 @@ const submitHandler = async () => {
         type="form"
         :submit-attrs="{
           inputClass: 'p-button p-component',
+          wrapperClass: '',
+          outerClass: ''
         }"
         @submit="submitHandler"
       >
