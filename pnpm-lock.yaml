@@ -8,8 +8,8 @@ dependencies:
     specifier: ^3.4.2
     version: 3.4.2(rollup@3.21.0)
   '@sfxcode/formkit-primevue':
-    specifier: ^1.0.9
-    version: 1.0.9(vue@3.2.47)
+    specifier: ^1.1.0
+    version: 1.1.0(vue@3.2.47)
 
 devDependencies:
   '@anu-vue/preset-theme-default':
@@ -1364,8 +1364,8 @@ packages:
       picomatch: 2.3.1
       rollup: 3.21.0
 
-  /@sfxcode/formkit-primevue@1.0.9(vue@3.2.47):
-    resolution: {integrity: sha512-B/JTwvxpV+3XUAZK88NBbUyVzEpMsdmYXMRnulg30gRbsJV9/GO65dtwkP4YzgEHVe9AMjIDAgLjq/Lz4WRDOQ==}
+  /@sfxcode/formkit-primevue@1.1.0(vue@3.2.47):
+    resolution: {integrity: sha512-rk0e1SoFLTq2Senl/VYVE1rpRqHlBB/8v4fA4o+sZ7B3LFiUuJH11s6koIBAk8UUwkFxkEC2K0CmZ2yuOwD3Tg==}
     dependencies:
       '@formkit/i18n': 0.16.5
       '@formkit/vue': 0.16.5(vue@3.2.47)
