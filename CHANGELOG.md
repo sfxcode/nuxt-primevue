@@ -1,4 +1,4 @@
-## [1.1.0](https://github.com/sfxcode/nuxt-primevue/compare/v1.0.6...v1.1.0) (2023-04-16)
+### [1.1.4](https://github.com/sfxcode/nuxt-primevue/compare/v1.0.6...v1.1.4) (2023-04-29)
 
 
 ### Bug Fixes
@@ -13,6 +13,8 @@
 
 ### Documentation
 
+* **changelog:** update ([ca8db34](https://github.com/sfxcode/nuxt-primevue/commit/ca8db34b79df18e0ea3bc100b548017b9b96c8fd))
+* **changelog:** update ([6b3a5bb](https://github.com/sfxcode/nuxt-primevue/commit/6b3a5bb04f86a1c42477668e656cb78f75e1b396))
 * **search:** use local search from vitepress ([66a10d3](https://github.com/sfxcode/nuxt-primevue/commit/66a10d30c007f235b7fbf5448a4d87d29adcfa9a))
 
 
@@ -25,10 +27,14 @@
 
 ### Maintenance
 
+* **dependecies:** formkit-primevue ([503e476](https://github.com/sfxcode/nuxt-primevue/commit/503e4763ac605cb283076460ffcef45c48976fdc))
+* **dependecies:** formkit-primevue ([881560b](https://github.com/sfxcode/nuxt-primevue/commit/881560b5d892af30f12703c8340d01ec6995a7f5))
 * **dependecies:** formkit-primevue ([92aa37d](https://github.com/sfxcode/nuxt-primevue/commit/92aa37d79a76f6e27382816201a855870043f0d3))
 * **Dependecies:** formkit-primevue 1.0.5 ([a50e8ef](https://github.com/sfxcode/nuxt-primevue/commit/a50e8ef55c367b94ced657a3a30cd86a92e1f61f))
 * **dependecies:** nuxt 3.4.1 ([5b72075](https://github.com/sfxcode/nuxt-primevue/commit/5b72075cc75dcbb8ad27d0901f03f8ab5e14dd15))
 * **dependecies:** nuxt 3.4.1 ([9e5451e](https://github.com/sfxcode/nuxt-primevue/commit/9e5451e8ba30eaa8b0bfa4f466297f65e671d8fe))
+* **dependecies:** nuxt 3.4.2 ([f79d1ff](https://github.com/sfxcode/nuxt-primevue/commit/f79d1ff300458ccc920d7a58abec5b79f0ad3e07))
+* **dependecies:** nuxt 3.4.3 ([40d7ad0](https://github.com/sfxcode/nuxt-primevue/commit/40d7ad03efa01d56a1c111cda2580a9c960d37d5))
 * **dependecies:** update vitepress - use local search ([35931dc](https://github.com/sfxcode/nuxt-primevue/commit/35931dc7bf6dc57642275854e323a3d4f8fc283e))
 
 ### [1.0.6](https://github.com/sfxcode/nuxt-primevue/compare/v1.0.5...v1.0.6) (2023-04-09)
