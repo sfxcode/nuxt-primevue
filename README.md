@@ -2,7 +2,7 @@
 
 * Load [PrimeVue](https://www.primefaces.org/primevue/setup) Components
 * Add PrimeVue Services (usePrimeDataTable)
-* [Formkit](https://formkit.com/) Support witf [formkit-primevue](https://github.com/sfxcode/formkit-primevue)
+* [Formkit](https://formkit.com/) Support with [formkit-primevue](https://github.com/sfxcode/formkit-primevue)
 
 ## Version
 
@@ -13,6 +13,12 @@
 [Github: nuxt3-primevue-starter](https://github.com/sfxcode/nuxt3-primevue-starter)
 
 [Netlify:  nuxt3-primevue-starter](https://nuxt3-primevue-starter.netlify.app/)
+
+## Docs
+
+Read more on [Docs](https://sfxcode.github.io/nuxt-primevue)
+
+Tutorial: [Getting started](https://sfxcode.github.io/nuxt-primevue/guide/getting-started.html)
 
 ## Usage
 
@@ -109,4 +115,4 @@ export function defaultPrimeVueComponents(useFormkit: boolean, onlyGlobal:boolea
 - Use `npm run dev` to start [playground](./playground) in development mode.
 
 
-![](nuxt-primevue.png)
+![](PrimeVue_demo_dark.png)
