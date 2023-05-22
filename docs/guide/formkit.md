@@ -31,6 +31,7 @@ E.g. InputMask -> primeInputMask
 - ToggleButton
 - SelectButton
 - TriStateCheckbox
+- RadioButton
 
 ## Formkit Usage Demo
 
