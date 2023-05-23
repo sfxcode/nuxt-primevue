@@ -36,7 +36,7 @@
   "dependencies": {
     "@formkit/nuxt": "0.17.2",
     "@nuxt/kit": "^3.5.1",
-    "@sfxcode/formkit-primevue": "^1.1.4"
+    "@sfxcode/formkit-primevue": "^1.1.5"
   },
   "devDependencies": {
     "@anu-vue/preset-theme-default": "^0.14.0",
