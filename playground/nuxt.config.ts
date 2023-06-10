@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@unocss/nuxt',
     '@formkit/nuxt',
+    '@pinia/nuxt',
     NuxtPrimeVue
   ],
 

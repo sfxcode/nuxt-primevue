@@ -1,6 +1,7 @@
 <script setup lang='ts'>
 
 import { FilterMatchMode } from 'primevue/api'
+import { useDataStore } from '~/stores/data'
 const { tableData, filters, dataTableRef, exportCSV } = usePrimeDataTable()
 
 filters.value = {
@@ -10,16 +11,11 @@ filters.value = {
   inventoryStatus: { value: null, matchMode: FilterMatchMode.STARTS_WITH }
 }
 
-const { pending, data: products, error, refresh } = useLazyFetch('/api/products')
+const dataStore = useDataStore()
 
-watch(products, (newProducts) => {
-  console.log(newProducts.value)
-  tableData.value = newProducts?.data
-})
-
-onMounted(() => {
-  console.log('mounted')
-  refresh()
+onMounted(async () => {
+  await dataStore.initData()
+  tableData.value = dataStore.products
 })
 
 </script>
@@ -27,15 +23,7 @@ onMounted(() => {
 <template>
   <div class="card">
     <h2>PrimeVue Demo DataTable</h2>
-    <div v-if="error">
-      <h5 class="text-red-500">
-        Error
-      </h5>
-      <span class="text-red-500">{{ error }}</span>
-    </div>
-    <div v-if="pending">
-      <h6>Loading ...</h6>
-    </div>
+
     <div v-if="tableData">
       <DataTable
         ref="dataTableRef"
