@@ -1,14 +1,18 @@
-### [1.1.7](https://github.com/sfxcode/nuxt-primevue/compare/v1.1.5...v1.1.7) (2023-05-22)
+## [1.1.8](https://github.com/sfxcode/nuxt-primevue/compare/v1.1.5...v1.1.8) (2023-06-10)
 
 
 ### Maintenance
 
+* **dependecies:** formkit-primevue 1.1.4 ([4f539a8](https://github.com/sfxcode/nuxt-primevue/commit/4f539a8bb8bb0a19f75d1b2454d9cf41d1407929))
+* **dependecies:** formkit-primevue 1.1.4 ([c92ba7b](https://github.com/sfxcode/nuxt-primevue/commit/c92ba7b65726758b83b89aaa8c8ed921c0dd3b39))
+* **dependecies:** formkit-primevue 1.1.4 ([b0f9e14](https://github.com/sfxcode/nuxt-primevue/commit/b0f9e1451debd022299626901fcd1b3c6132c38c))
 * **dependecies:** formkit-primevue 1.1.4 ([fb9a465](https://github.com/sfxcode/nuxt-primevue/commit/fb9a465f50804bfee10568d3daef120751285335))
 * **dependecies:** formkit-primevue 1.1.4 ([c4fef63](https://github.com/sfxcode/nuxt-primevue/commit/c4fef6373a3e7313af4134435cfd22c8cc7bd96d))
 * **dependecies:** nuxt 3.5.0 ([c5fed3a](https://github.com/sfxcode/nuxt-primevue/commit/c5fed3a4fed964257be012130599ec37c77023e5))
 * **dependecies:** nuxt 3.5.0 ([d6e2411](https://github.com/sfxcode/nuxt-primevue/commit/d6e2411df558f72ebd042c90b648c8e494d60134))
+* **dependecies:** nuxt 3.5.3 ([ff593d4](https://github.com/sfxcode/nuxt-primevue/commit/ff593d433f868ec76bceb535c856243acfae5054))
 
-### [1.1.5](https://github.com/sfxcode/nuxt-primevue/compare/v1.1.4...v1.1.5) (2023-05-14)
+## [1.1.5](https://github.com/sfxcode/nuxt-primevue/compare/v1.1.4...v1.1.5) (2023-05-14)
 
 
 ### Documentation
@@ -21,7 +25,7 @@
 * **dependecies:** formkit-primevue 1.1.2 ([207f103](https://github.com/sfxcode/nuxt-primevue/commit/207f103cabdd7689dd25de9c12deeeb1af2f24b7))
 * **dependecies:** formkit-primevue 1.1.2 ([a685f01](https://github.com/sfxcode/nuxt-primevue/commit/a685f0191cf22e6f00e40ced3d43f6a51dc20921))
 
-### [1.1.4](https://github.com/sfxcode/nuxt-primevue/compare/v1.0.6...v1.1.4) (2023-04-29)
+## [1.1.4](https://github.com/sfxcode/nuxt-primevue/compare/v1.0.6...v1.1.4) (2023-04-29)
 
 
 ### Bug Fixes
@@ -61,7 +65,7 @@
 * **dependecies:** nuxt 3.4.3 ([40d7ad0](https://github.com/sfxcode/nuxt-primevue/commit/40d7ad03efa01d56a1c111cda2580a9c960d37d5))
 * **dependecies:** update vitepress - use local search ([35931dc](https://github.com/sfxcode/nuxt-primevue/commit/35931dc7bf6dc57642275854e323a3d4f8fc283e))
 
-### [1.0.6](https://github.com/sfxcode/nuxt-primevue/compare/v1.0.5...v1.0.6) (2023-04-09)
+## [1.0.6](https://github.com/sfxcode/nuxt-primevue/compare/v1.0.5...v1.0.6) (2023-04-09)
 
 
 ### Maintenance
@@ -69,7 +73,7 @@
 * **Dependecies:** formkit-primevue 1.0.3 ([7c04db6](https://github.com/sfxcode/nuxt-primevue/commit/7c04db61da3ebf1781db5df59c5913838c60341a))
 * **Dependecies:** formkit-primevue 1.0.3 ([5321f55](https://github.com/sfxcode/nuxt-primevue/commit/5321f552c6c6c96f9d41768722434c6d95c8f9ce))
 
-### [1.0.5](https://github.com/sfxcode/nuxt-primevue/compare/v1.0.4...v1.0.5) (2023-03-21)
+## [1.0.5](https://github.com/sfxcode/nuxt-primevue/compare/v1.0.4...v1.0.5) (2023-03-21)
 
 
 ### Maintenance
@@ -77,7 +81,7 @@
 * **dependecies:** formkit-primevue ([a889680](https://github.com/sfxcode/nuxt-primevue/commit/a8896807f0bfb7349c50121fd43302ce2854125a))
 * **dependecies:** formkit-primevue ([d7b06d1](https://github.com/sfxcode/nuxt-primevue/commit/d7b06d18f833dc4f70ab05aa01294256319a1132))
 
-### [1.0.4](https://github.com/sfxcode/nuxt-primevue/compare/v1.0.1...v1.0.4) (2023-03-14)
+## [1.0.4](https://github.com/sfxcode/nuxt-primevue/compare/v1.0.1...v1.0.4) (2023-03-14)
 
 
 ### Bug Fixes
@@ -95,7 +99,7 @@
 * **Dependecies:** nuxt 3.3.1 ([197bee3](https://github.com/sfxcode/nuxt-primevue/commit/197bee3d4277d2f2f36a470d226d96935907b070))
 * **Linting:** Updated Files ([9c2f197](https://github.com/sfxcode/nuxt-primevue/commit/9c2f197778a05f641eff78c71e9f1cdc11134443))
 
-### [1.0.1](https://github.com/sfxcode/nuxt-primevue/compare/v1.0.0...v1.0.1) (2023-03-03)
+## [1.0.1](https://github.com/sfxcode/nuxt-primevue/compare/v1.0.0...v1.0.1) (2023-03-03)
 
 
 ### Maintenance
@@ -124,7 +128,7 @@
 * **Dependecies:** primevue ([91ac0a8](https://github.com/sfxcode/nuxt-primevue/commit/91ac0a86ec5a2390439d965e9d5958a2f0a05e59))
 * **Dependecies:** primevue, formkit ([391f638](https://github.com/sfxcode/nuxt-primevue/commit/391f6381baa5cb5f0109c770caf9502a87550747))
 
-### [0.9.5](https://github.com/sfxcode/nuxt-primevue/compare/v0.9.4...v0.9.5) (2023-01-22)
+## [0.9.5](https://github.com/sfxcode/nuxt-primevue/compare/v0.9.4...v0.9.5) (2023-01-22)
 
 
 ### Documentation
@@ -144,7 +148,7 @@
 * **Action:** Add Gihub Pages action ([4438d6d](https://github.com/sfxcode/nuxt-primevue/commit/4438d6d5591aab0ac27d0a369a6d4193f3396482))
 * **Dependecies:** formkit-primevue 0.9.5 ([2e18c0d](https://github.com/sfxcode/nuxt-primevue/commit/2e18c0dd81e454ea7e1c08e163039a4cd95203f5))
 
-### [0.9.4](https://github.com/sfxcode/nuxt-primevue/compare/v0.8.4...v0.9.4) (2022-11-19)
+## [0.9.4](https://github.com/sfxcode/nuxt-primevue/compare/v0.8.4...v0.9.4) (2022-11-19)
 
 
 ### Code Refactoring
@@ -172,7 +176,7 @@
 * **Dependecies:** formkit-primevue 0.9.4 ([03b01cb](https://github.com/sfxcode/nuxt-primevue/commit/03b01cb64ae36591723b30b845f69775231488a7))
 * **Dependecies:** PrimeVue 3.19 ([27d3627](https://github.com/sfxcode/nuxt-primevue/commit/27d36272aaa5612379ba9404fc36748578703155))
 
-### [0.8.4](https://github.com/sfxcode/nuxt-primevue/compare/0764e551a08cceb6f91a105f131e50eaa5705ecd...v0.8.4) (2022-11-04)
+## [0.8.4](https://github.com/sfxcode/nuxt-primevue/compare/0764e551a08cceb6f91a105f131e50eaa5705ecd...v0.8.4) (2022-11-04)
 
 
 ### Bug Fixes
