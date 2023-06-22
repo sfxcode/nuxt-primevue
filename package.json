@@ -1,6 +1,6 @@
 {
   "name": "@sfxcode/nuxt-primevue",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "license": "MIT",
   "type": "module",
   "author": {
@@ -36,7 +36,7 @@
   "dependencies": {
     "@formkit/nuxt": "0.17.3",
     "@nuxt/kit": "^3.5.3",
-    "@sfxcode/formkit-primevue": "^1.1.6"
+    "@sfxcode/formkit-primevue": "^1.1.7"
   },
   "devDependencies": {
     "@anu-vue/preset-theme-default": "^0.15.2",
@@ -54,8 +54,8 @@
     "flexsearch": "^0.7.31",
     "markdown-it": "^13.0.1",
     "nuxt": "^3.5.3",
-    "sass": "^1.63.4",
-    "vitepress": "1.0.0-beta.2"
+    "sass": "^1.63.6",
+    "vitepress": "1.0.0-beta.3"
   },
   "keywords": [
     "nuxt",
