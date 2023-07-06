@@ -21,6 +21,8 @@ export interface ModuleOptions {
     force?: Array<PrimeVueComponent | string>
   }
   useFormkit: boolean
+  quiet: boolean
+  includeDemo: boolean
 }
 
 // #endregion options
@@ -49,7 +51,9 @@ export default defineNuxtModule<ModuleOptions>({
     config: {
       ripple: true
     },
-    useFormkit: true
+    useFormkit: true,
+    quiet: false,
+    includeDemo: true
   },
   async setup (moduleOptions, nuxt) {
     const runtimeDir = fileURLToPath(new URL('./runtime', import.meta.url))
@@ -96,14 +100,20 @@ export default defineNuxtModule<ModuleOptions>({
     }
     if (moduleOptions.components?.force) { await addComponents(moduleOptions.components?.force) }
 
-    consola.info('[@sfxcode/nuxt-primevue] ' + registeredNames.length + ' of ' + (defaultPrimevueComponentNames.length + defaultPrimevueExcludeComponentNames.length) + ' PrimeVue Components added, finetetuning if needed by components configuration in module options')
+    if (!moduleOptions.quiet) {
+      consola.info('[@sfxcode/nuxt-primevue] ' + registeredNames.length + ' of ' + (defaultPrimevueComponentNames.length + defaultPrimevueExcludeComponentNames.length) + ' PrimeVue Components added, finetetuning if needed by components configuration in module options')
+    }
     // consola.info(registeredNames)
 
     addImportsDir(resolve(runtimeDir, 'composables'))
 
-    await addComponent({ name: 'PrimeDemoToast', filePath: resolve(runtimeDir, 'components/demo/PrimeDemoToast.vue') })
-    await addComponent({ name: 'PrimeDemoForm', filePath: resolve(runtimeDir, 'components/demo/PrimeDemoForm.vue') })
+    if (moduleOptions.includeDemo) {
+      await addComponent({ name: 'PrimeDemoToast', filePath: resolve(runtimeDir, 'components/demo/PrimeDemoToast.vue') })
+      await addComponent({ name: 'PrimeDemoForm', filePath: resolve(runtimeDir, 'components/demo/PrimeDemoForm.vue') })
+    }
 
-    consola.success('[@sfxcode/nuxt-primevue] loaded')
+    if (!moduleOptions.quiet) {
+      consola.success('[@sfxcode/nuxt-primevue] loaded')
+    }
   }
 })
