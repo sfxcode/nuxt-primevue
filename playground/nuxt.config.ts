@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     config: {
       ripple: true
     },
-    quiet: true,
+    quiet: false,
     components: {
       include: [...defaultPrimeVueComponents(true, true)],
       force: ['DataTable', 'Column', 'Button', 'Toolbar', { name: 'Message', global: true }]
