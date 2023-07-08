@@ -1,3 +1,15 @@
+## [1.2.5](https://github.com/sfxcode/nuxt-primevue/compare/v1.2.4...v1.2.5) (2023-07-08)
+
+
+### Features
+
+* add quiet mode ([#7](https://github.com/sfxcode/nuxt-primevue/issues/7)) ([f33abd1](https://github.com/sfxcode/nuxt-primevue/commit/f33abd1e726aca27816f4d462c15a15790765fff))
+
+
+### Maintenance
+
+* **dependecies:** nuxt 3.6.2 more config options ([09f90ff](https://github.com/sfxcode/nuxt-primevue/commit/09f90ff3280c379a88b81cbc8e62123753b26f2c))
+
 ## [1.2.4](https://github.com/sfxcode/nuxt-primevue/compare/v1.2.0...v1.2.4) (2023-07-03)
 
 
@@ -7,6 +19,7 @@
 * **actions:** update ([f31fc48](https://github.com/sfxcode/nuxt-primevue/commit/f31fc483e0fe26f32513e8c5841aba3d5314065e))
 * **dependecies:** formkit-primevue 1.1.6 ([6861861](https://github.com/sfxcode/nuxt-primevue/commit/6861861ea0b19e29d617371a6cb07c805b7426f3))
 * **dependecies:** formkit-primevue 1.1.7 ([b40fb7a](https://github.com/sfxcode/nuxt-primevue/commit/b40fb7ad6b124a3a3130e7fd62c50d1b836fd118))
+* **dependecies:** formkit-primevue 1.1.8 nuxt 3.6.1 ([5316d47](https://github.com/sfxcode/nuxt-primevue/commit/5316d47dcdadc5fc9cc03e4e5c3d3bbed7030681))
 * **dependecies:** formkit-primevue 1.1.8 nuxt 3.6.1 ([fac1007](https://github.com/sfxcode/nuxt-primevue/commit/fac1007e176d888c29a3d968e82b31217e88cd2e))
 * **dependecies:** nuxt 3.5.3 - use lockfile version 6.0 ([af16edb](https://github.com/sfxcode/nuxt-primevue/commit/af16edb01b90171cb7a994f9ed193cb96928c712))
 
