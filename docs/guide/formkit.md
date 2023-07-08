@@ -1,12 +1,25 @@
 # About Formkit Integration
 
+FormKit equips developers to build their forms 10x faster by simplifying form structure, generation, validation, theming, submission, error handling, and more.
+
+In combination with PrimeVue it is an excellent choice for form validation.
+## Formkit - Primevue
+
+Helper classes for using [Formkit](https://formkit.com/) with the [PrimeVue UI Framework](https://www.primefaces.org/primevue/#/)
+
+### Usages
+
+A Nuxt 3 Module (PrimeVue and Formkit bundled) under [nuxt-primevue](https://github.com/sfxcode/nuxt-primevue)
+
+[Nuxt 3 PrimeVue Starter](https://github.com/sfxcode/nuxt3-primevue-starter) and [Vite PrimeVue Starter](https://github.com/sfxcode/vite-primevue-starter) with Formkit support available
+
 
 ## Supported Inputs
 
 Inputs are used in schema with **prime** as prefix and the **input name** as suffix.
 
 ::: warning
-Used inputs must be imported global (default), because of using in the startup phase.
+Used inputs used by FormKit must be imported global (default), because of using them in the startup phase.
 :::
 
 

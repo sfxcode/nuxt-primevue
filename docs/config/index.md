@@ -4,15 +4,26 @@ Available Configuration options are:
 
 <<< @/../src/module.ts#options
 
+## Options
+
+| Option        | Default | Config Section                        | Comment                                     |
+|---------------|:-------:|:--------------------------------------|:--------------------------------------------|
+| config        |         | [Primevue](#primevue-configuration)   | PrimeVue Config            |
+| components    |         | [Component](#component-configuration) | Finetuning of used PrimeVue components      |
+| useFormkit    |  true   | [Formkit](#component-configuration)   | Force to include components used by Formkit |
+| quiet |  false  |                                       | Show module logs on startup                 |
+| includeDemo |  true   |                                       | Include Demo Components                     |
+
+
 ## Default Configuration
 
 If no configuration provided, this module work totally fine.
 
-Nearly all PrimeVue components imported, formkit components imported global (except Editor because of some SSR problems).
+Nearly all PrimeVue components are imported (except Editor because of some SSR problems).
 
-Default PrimeVueConfiguration is used (ripple:true).
+Default PrimeVueConfiguration is used with (ripple:true).
 
-If fintuning needed, see information below.
+If fintuning is needed, see information below.
 
 ## Primevue Configuration
 

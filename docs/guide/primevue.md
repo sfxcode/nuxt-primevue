@@ -16,7 +16,7 @@ Following **services** are automatically enabled by this module:
 * ConfirmationService
 * ToastService
 
-**Components** are available based on your module configuration.
+**Components** are available based on your [module configuration](../config/#component-configuration).
 
 ## Usage in Application
 
