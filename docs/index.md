@@ -21,9 +21,9 @@ features:
   details: Easy PrimeVue integration with Nuxt 3. Use PrimeVue components, directives and services
 - title: "PrimeVue"
   details: Next Generation Vue UI Component Library. Rich set of open source native components for Vue.
-- title: "Formkit"
+- title: "Formkit (optional)"
   details: A Vue form building framework that simplifies form structure, generation, validation, theming, submission, error handling, and more.
-- title: "Formkit-PrimeVue"
+- title: "Formkit-PrimeVue (optional)"
   details: PrimeVue support for the FormKit validation Framwork. PrimeVue inputs are prepared for seamless formkit integration.
 ---
 

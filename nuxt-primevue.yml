@@ -1,0 +1,16 @@
+name: nuxt-primevue
+description: PrimeVue integration in Nuxt - Optional Nuxt FormKit integration
+repo: sfxcode/nuxt-primevue
+npm: nuxt-primevue
+icon: nuxt.svg
+github: https://github.com/sfxcode/nuxt-primevue
+website: https://sfxcode.github.io/nuxt-primevue
+learn_more: https://sfxcode.github.io/nuxt-primevue
+category: UI
+type: 3rd-party
+maintainers:
+  - name: Tom Lamers
+    github: sfxcode
+compatibility:
+  nuxt: ^3.0.0
+  requires: {}

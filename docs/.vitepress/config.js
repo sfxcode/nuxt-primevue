@@ -3,13 +3,13 @@ import { defineConfig } from 'vitepress'
 import { version } from '../../package.json'
 
 export default defineConfig({
-  title: 'PrimeVue Nuxt 3',
-  description: 'PrimeVue Nuxt 3',
+  title: 'Nuxt PrimeVue',
+  description: 'PrimeVue Module for Nuxt 3',
   base: '/nuxt-primevue/',
   themeConfig: {
     footer: {
-      message: 'VitePress Blog Starter',
-      copyright: 'Copyright © 2022 SFXCode',
+      message: 'Nuxt 3 PrimeVue Module',
+      copyright: 'Copyright © 2023 SFXCode',
     },
     search: {
       provider: 'local'

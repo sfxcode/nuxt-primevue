@@ -19,7 +19,9 @@ A Nuxt 3 Module (PrimeVue and Formkit bundled) under [nuxt-primevue](https://git
 Inputs are used in schema with **prime** as prefix and the **input name** as suffix.
 
 ::: warning
-Used inputs used by FormKit must be imported global (default), because of using them in the startup phase.
+Used inputs by FormKit must be imported global (default).
+
+They are referenced in the startup phase, if FormKit is enabled.
 :::
 
 
