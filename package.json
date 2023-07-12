@@ -36,16 +36,16 @@
   "dependencies": {
     "@formkit/nuxt": "0.17.4",
     "@nuxt/kit": "^3.6.2",
-    "@sfxcode/formkit-primevue": "^1.1.8"
+    "@sfxcode/formkit-primevue": "^1.2.0"
   },
   "devDependencies": {
     "@anu-vue/preset-theme-default": "^0.15.2",
-    "@iconify-json/mdi": "^1.1.52",
+    "@iconify-json/mdi": "^1.1.53",
     "@nuxt/module-builder": "^0.4.0",
     "@nuxtjs/eslint-config-typescript": "12.0.0",
     "@pinia/nuxt": "^0.4.11",
-    "@types/node": "^20.4.0",
-    "@unocss/nuxt": "^0.53.4",
+    "@types/node": "^20.4.1",
+    "@unocss/nuxt": "^0.53.5",
     "@vueuse/nuxt": "^10.2.1",
     "anu-vue": "^0.15.2",
     "conventional-changelog-cli": "^3.0.0",
