@@ -1,4 +1,19 @@
+## [1.2.6](https://github.com/sfxcode/nuxt-primevue/compare/v1.2.5...v1.2.6) (2023-07-12)
+
+
+### Documentation
+
+* **Base:** Some polishing ([1e42b40](https://github.com/sfxcode/nuxt-primevue/commit/1e42b40c41ebbb8e6d32410fe16789bd8a75c2da))
+* **Base:** Some polishing ([8155156](https://github.com/sfxcode/nuxt-primevue/commit/8155156cc1458ab21088794bf97d0c43881cad56))
+* **Base:** Some polishing ([13dfb05](https://github.com/sfxcode/nuxt-primevue/commit/13dfb057aeb0f918a0b6e026f3b606b50d0cb95c))
+* **Configuration:** Provide some additional Info ([62f6180](https://github.com/sfxcode/nuxt-primevue/commit/62f61807551a5a870e85ada6598d921736f2933c))
+
 ## [1.2.5](https://github.com/sfxcode/nuxt-primevue/compare/v1.2.4...v1.2.5) (2023-07-08)
+
+
+### Documentation
+
+* **changelog:** update to 1.2.5 ([aa91a44](https://github.com/sfxcode/nuxt-primevue/commit/aa91a4420943364a8d0a61901677dbcd52614f04))
 
 
 ### Features
