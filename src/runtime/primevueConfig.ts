@@ -125,6 +125,7 @@ export interface PrimeVueLocaleOptions {
   aria?: PrimeVueLocaleAriaOptions;
 }
 export interface PrimeVueConfiguration {
+  unstyled?: boolean;
   ripple?: boolean;
   inputStyle?: string;
   locale?: PrimeVueLocaleOptions;
