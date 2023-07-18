@@ -3,14 +3,15 @@ import { fileURLToPath } from 'url'
 import { defineNuxtModule, addPlugin, addComponent, addImportsDir, createResolver } from '@nuxt/kit'
 import { defu } from 'defu'
 import { consola } from 'consola'
+import { PrimeVueConfiguration } from 'primevue/config'
 import { name, version } from '../package.json'
+
 import {
   defaultPrimevueComponentNames,
   defaultPrimeVueComponents,
   defaultPrimevueExcludeComponentNames,
   PrimeVueComponent
 } from './runtime/primevueComponents'
-import { PrimeVueConfiguration } from './runtime/primevueConfig'
 
 // #region options
 export interface ModuleOptions {
