@@ -18,6 +18,13 @@
   "files": [
     "dist"
   ],
+  "unbuild": {
+    "rollup": {
+      "commonjs": {
+        "exclude": "node_modules/**"
+      }
+    }
+  },
   "scripts": {
     "prepack": "nuxt-module-build",
     "dev": "nuxi dev playground",
