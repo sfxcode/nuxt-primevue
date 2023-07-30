@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { useToast } from 'primevue/usetoast'
-
+import { ToastMessageOptions } from 'primevue/toast'
 const toast = useToast()
 
-const showMessage = (severity: string, summary: string, detail: string) => {
+const showMessage = (severity: ToastMessageOptions['severity'], summary: string, detail: string) => {
   toast.add({ severity, summary, detail, life: 3000 })
 }
 </script>
