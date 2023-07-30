@@ -1,6 +1,6 @@
 {
   "name": "@sfxcode/nuxt-primevue",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "license": "MIT",
   "type": "module",
   "author": {
@@ -52,17 +52,17 @@
     "@nuxtjs/eslint-config-typescript": "12.0.0",
     "@pinia/nuxt": "^0.4.11",
     "@types/node": "^20.4.5",
-    "@unocss/nuxt": "^0.53.6",
+    "@unocss/nuxt": "^0.54.0",
     "@vueuse/nuxt": "^10.2.1",
     "anu-vue": "^0.15.2",
     "conventional-changelog-cli": "^3.0.0",
     "defu": "^6.1.2",
-    "eslint": "^8.45.0",
+    "eslint": "^8.46.0",
     "flexsearch": "^0.7.31",
     "markdown-it": "^13.0.1",
     "nuxt": "^3.6.5",
     "sass": "^1.64.1",
-    "vitepress": "1.0.0-beta.6"
+    "vitepress": "1.0.0-beta.7"
   },
   "keywords": [
     "nuxt",

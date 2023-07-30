@@ -114,7 +114,7 @@ const submitHandler = async () => {
 <template>
   <div>
     <span class="p-21" />
-    <div v-focustrap class="myFormkit">
+    <div class="myFormkit">
       <FormKit
         id="form"
         v-model="data"
