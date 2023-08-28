@@ -35,7 +35,6 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
-    "changelog": "conventional-changelog -p conventionalcommits -i CHANGELOG.md -s -r 0 -n changelog/config.ts"
   },
   "build": {
     "failOnWarn": false
@@ -57,7 +56,6 @@
     "@unocss/nuxt": "^0.55.3",
     "@vueuse/nuxt": "^10.4.0",
     "anu-vue": "^0.15.2",
-    "conventional-changelog-cli": "^3.0.0",
     "defu": "^6.1.2",
     "eslint": "^8.48.0",
     "markdown-it": "^13.0.1",
