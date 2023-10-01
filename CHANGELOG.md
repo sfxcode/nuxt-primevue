@@ -1,3 +1,8 @@
+## [v1.3.9] - 2023-10-01
+### :wrench: Chores
+- [`5fd201a`](https://github.com/sfxcode/nuxt-primevue/commit/5fd201a9ac2445ef55a69b962d9df367f0eb605c) - **dependecies**: update to formkit-primevue 1.3.5 and FormKit 1.2.0 *(commit by [@sfxcode](https://github.com/sfxcode))*
+
+
 ## [v1.3.8] - 2023-09-24
 ### :wrench: Chores
 - [`767cdaf`](https://github.com/sfxcode/nuxt-primevue/commit/767cdafe3c8f5dbfc0f9ba1b6aab108a0e6a0ec5) - **dependecies**: update to formkit-primevue 1.3.4 formkit 1.1.0 *(commit by [@sfxcode](https://github.com/sfxcode))*
@@ -314,3 +319,4 @@
 [v1.3.6]: https://github.com/sfxcode/nuxt-primevue/compare/v1.3.5...v1.3.6
 [v1.3.7]: https://github.com/sfxcode/nuxt-primevue/compare/v1.3.6...v1.3.7
 [v1.3.8]: https://github.com/sfxcode/nuxt-primevue/compare/v1.3.7...v1.3.8
+[v1.3.9]: https://github.com/sfxcode/nuxt-primevue/compare/v1.3.8...v1.3.9
