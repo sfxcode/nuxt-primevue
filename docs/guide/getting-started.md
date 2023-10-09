@@ -42,7 +42,6 @@ Base scss files for formkit can be imported from formkit-primevue.
     'primevue/resources/primevue.css',
     'primevue/resources/themes/saga-blue/theme.css',
     'primeicons/primeicons.css',
-    '@sfxcode/formkit-primevue/dist/sass/formkit-prime-inputs.scss',
     '@sfxcode/formkit-primevue/dist/sass/formkit-primevue.scss'
   ]
 ```
