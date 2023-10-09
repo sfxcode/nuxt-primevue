@@ -9,7 +9,7 @@
         <div><PrimeDemoToast /></div>
         <div><PrimeDemoDataTable /></div>
       </div>
-      <div class="basis-1/4">
+      <div class="basis-1/3">
         <PrimeDemoForm />
       </div>
     </div>
@@ -19,6 +19,6 @@
 <style scoped>
 
 body {
-  font-size: 14px;
+  font-size: 13px;
 }
 </style>

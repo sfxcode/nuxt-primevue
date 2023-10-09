@@ -85,6 +85,7 @@ const schema = reactive(
       $formkit: 'primeSlider',
       name: 'slider',
       label: 'Max messages',
+      style: 'width: 200px;margin-top: 6px;margin-bottom: 4px',
       min: 5,
       step: 5,
       value: 10
