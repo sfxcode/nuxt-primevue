@@ -36,7 +36,6 @@ export default defineNuxtConfig({
     'primevue/resources/primevue.css',
     'primevue/resources/themes/lara-dark-blue/theme.css',
     'primeicons/primeicons.css',
-    '@sfxcode/formkit-primevue/dist/sass/formkit-prime-inputs.scss',
     '@sfxcode/formkit-primevue/dist/sass/formkit-primevue.scss'
   ],
   build: {
