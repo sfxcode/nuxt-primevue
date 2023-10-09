@@ -1,3 +1,12 @@
+## [v1.4.0] - 2023-10-09
+### :recycle: Refactors
+- [`a959e00`](https://github.com/sfxcode/nuxt-primevue/commit/a959e004ae8bebd25a0b1b78d4ec7dd9509ebd93) - **styling**: Add Styling to slider *(commit by [@sfxcode](https://github.com/sfxcode))*
+
+### :wrench: Chores
+- [`1ef619b`](https://github.com/sfxcode/nuxt-primevue/commit/1ef619b872049d2feb762f61b185ecfa9708d0d0) - **dependecies**: update to formkit-primevue 1.4.0 and FormKit 1.2.2 *(commit by [@sfxcode](https://github.com/sfxcode))*
+- [`aa57029`](https://github.com/sfxcode/nuxt-primevue/commit/aa570297008cc4231b09336d174937d241e34808) - **version**: prepare 1.4 release *(commit by [@sfxcode](https://github.com/sfxcode))*
+
+
 ## [v1.3.9] - 2023-10-01
 ### :wrench: Chores
 - [`5fd201a`](https://github.com/sfxcode/nuxt-primevue/commit/5fd201a9ac2445ef55a69b962d9df367f0eb605c) - **dependecies**: update to formkit-primevue 1.3.5 and FormKit 1.2.0 *(commit by [@sfxcode](https://github.com/sfxcode))*
@@ -320,3 +329,4 @@
 [v1.3.7]: https://github.com/sfxcode/nuxt-primevue/compare/v1.3.6...v1.3.7
 [v1.3.8]: https://github.com/sfxcode/nuxt-primevue/compare/v1.3.7...v1.3.8
 [v1.3.9]: https://github.com/sfxcode/nuxt-primevue/compare/v1.3.8...v1.3.9
+[v1.4.0]: https://github.com/sfxcode/nuxt-primevue/compare/v1.3.9...v1.4.0
