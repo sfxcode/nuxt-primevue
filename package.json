@@ -42,17 +42,17 @@
   "dependencies": {
     "@formkit/nuxt": "1.2.2",
     "@nuxt/kit": "^3.7.4",
-    "@sfxcode/formkit-primevue": "^1.4.0",
+    "@sfxcode/formkit-primevue": "^1.4.1",
     "primeicons": "^6.0.1",
-    "primevue": "^3.35.0"
+    "primevue": "^3.36.0"
   },
   "devDependencies": {
     "@anu-vue/preset-theme-default": "^0.15.2",
     "@iconify-json/mdi": "^1.1.54",
     "@nuxt/module-builder": "^0.5.2",
     "@nuxtjs/eslint-config-typescript": "12.1.0",
-    "@pinia/nuxt": "^0.4.11",
-    "@types/node": "^20.8.3",
+    "@pinia/nuxt": "^0.5.0",
+    "@types/node": "^20.8.6",
     "@unocss/nuxt": "^0.56.5",
     "@vueuse/nuxt": "^10.5.0",
     "anu-vue": "^0.15.2",
@@ -60,8 +60,8 @@
     "eslint": "^8.51.0",
     "markdown-it": "^13.0.2",
     "nuxt": "^3.7.4",
-    "sass": "^1.69.0",
-    "vitepress": "1.0.0-rc.20"
+    "sass": "^1.69.3",
+    "vitepress": "1.0.0-rc.22"
   },
   "keywords": [
     "nuxt",
