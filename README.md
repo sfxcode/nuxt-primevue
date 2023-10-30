@@ -1,4 +1,20 @@
-# Nuxt 3 Module PrimeVue
+# Nuxt 3 Module PrimeVue (DEPRECATED)
+
+October 30, 2023.
+
+Hello everybody. After using and maintaining this project for nearly a year, there is no need for this module any longer because the developer of PrimeVue made an official one ([primevue-nuxt-module](https://github.com/primefaces/primevue-nuxt-module)).
+
+This module filled the gap for a while and was a lot of fun in devoloping, but i will be glad to use a new one with official PrimeVue support.
+
+Big thanks to anybody who used it and helped with issues and PRs.
+
+If you switch to the official [primevue-nuxt-module](https://github.com/primefaces/primevue-nuxt-module), you will find out that configuration is oore or less the same. I will also update my existing demo projects to use the official module from now on. Please support the offical module with stars and take part in the development.
+
+So keep on coding and stay safe and healthy,
+
+Tom (sfxcode)
+
+## About
 
 * Load [PrimeVue](https://www.primefaces.org/primevue/setup) Components
 * Add PrimeVue Services (usePrimeDataTable)
